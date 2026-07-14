@@ -300,6 +300,7 @@ img, svg { display: block; max-width: 100%; }
 @media (max-width: 820px) {
   .container { width: min(calc(100% - 36px), var(--container)); }
   .section { padding: 88px 0; }
+  body.menu-open .site-header.scrolled { backdrop-filter: none; }
   .menu-toggle { position: relative; z-index: 102; display: grid; place-items: center; width: 42px; height: 42px; }
   .menu-toggle span { position: absolute; width: 22px; height: 2px; background: var(--navy); transition: .25s ease; }
   .menu-toggle span:first-child { transform: translateY(-4px); }
