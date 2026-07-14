@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Velori porządkuje rezerwacje, klientów, płatności i komunikację małej firmy usługowej w jednym miejscu." />
+    <meta name="theme-color" content="#080a10" />
+    <title>Velori — spokojniejszy dzień w Twojej firmie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav shell" aria-label="Główna nawigacja">
+        <a class="brand" href="#top" aria-label="Velori — strona główna">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+          <span>velori</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Otwórz menu">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#produkt">Produkt</a>
+          <a href="#dla-kogo">Dla kogo</a>
+          <a href="#opinie">Klienci</a>
+          <a href="#cennik">Cennik</a>
+        </div>
+        <div class="nav-actions">
+          <a class="text-link" href="#demo">Zobacz demo</a>
+          <button class="button button-small trial-trigger" type="button">Wypróbuj za darmo</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> System, który pracuje razem z Tobą</div>
+          <h1>Więcej spokoju.<br /><span>Lepszy biznes.</span></h1>
+          <p class="hero-lead">Rezerwacje, klienci, płatności i komunikacja w jednym inteligentnym miejscu. Velori porządkuje dzień, zanim zdąży zrobić się chaotyczny.</p>
+          <div class="hero-actions">
+            <button class="button button-primary trial-trigger" type="button">Zacznij 14 dni za darmo <span aria-hidden="true">↗</span></button>
+            <button class="button button-ghost demo-trigger" type="button"><span class="play-icon" aria-hidden="true">▶</span> Obejrzyj demo <small>2:04</small></button>
+          </div>
+          <div class="hero-proof">
+            <div class="avatars" aria-hidden="true">
+              <span>AK</span><span>MO</span><span>JL</span><span>+2k</span>
+            </div>
+            <div><span class="stars" aria-label="Ocena 4,9 na 5">★★★★★</span><p><strong>4,9/5</strong> od właścicieli usług</p></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Podgląd panelu Velori">
+          <div class="ambient-orbit orbit-one"></div>
+          <div class="ambient-orbit orbit-two"></div>
+          <div class="floating-card floating-income">
+            <span class="mini-icon income-icon">↗</span>
+            <div><small>Przychód w lipcu</small><strong>28 640 zł</strong></div>
+            <span class="growth">+18,4%</span>
+          </div>
+          <div class="app-window">
+            <aside class="app-sidebar">
+              <div class="app-logo"><span class="brand-mark small"><i></i><i></i></span></div>
+              <div class="side-icons" aria-hidden="true">
+                <span class="active"><svg viewBox="0 0 24 24"><path d="M4 13h6V4H4v9Zm0 7h6v-4H4v4Zm10 0h6v-9h-6v9Zm0-16v4h6V4h-6Z"/></svg></span>
+                <span><svg viewBox="0 0 24 24"><path d="M7 3v3m10-3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/></svg></span>
+                <span><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m7-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm13 10v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+                <span><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 8l9 6 9-6"/></svg></span>
+              </div>
+              <div class="sidebar-avatar">OS</div>
+            </aside>
+            <div class="app-main">
+              <div class="app-topbar">
+                <div><small>Dzień dobry, Ola</small><h3>Twój dzień</h3></div>
+                <div class="topbar-actions"><button aria-label="Szukaj">⌕</button><button aria-label="Powiadomienia">♢<i></i></button><span>+ Nowa rezerwacja</span></div>
+              </div>
+              <div class="metrics-row">
+                <div><span><i class="status-dot purple"></i>Dzisiaj</span><strong>12</strong><small>rezerwacji</small></div>
+                <div><span><i class="status-dot cyan"></i>Obłożenie</span><strong>86%</strong><small>+8% vs śr.</small></div>
+                <div><span><i class="status-dot blue"></i>Przychód</span><strong>1 840 zł</strong><small>z 10 wizyt</small></div>
+              </div>
+              <div class="schedule-panel">
+                <div class="schedule-head">
+                  <div><strong>Harmonogram</strong><span>Dziś, 14 lipca</span></div>
+                  <div class="view-switch"><span class="active">Dzień</span><span>Tydzień</span></div>
+                </div>
+                <div class="timeline">
+                  <div class="time-labels"><span>09:00</span><span>10:00</span><span>11:00</span><span>12:00</span><span>13:00</span><span>14:00</span></div>
+                  <div class="calendar-grid">
+                    <div class="current-line"><i></i><span>10:24</span></div>
+                    <article class="booking booking-purple" style="--top: 4%; --height: 25%">
+                      <span class="client-avatar av1">MK</span><div><strong>Marta Kwiatkowska</strong><small>Koloryzacja · 09:15–10:45</small></div><em>Opłacona</em>
+                    </article>
+                    <article class="booking booking-cyan" style="--top: 37%; --height: 17%">
+                      <span class="client-avatar av2">AN</span><div><strong>Anna Nowak</strong><small>Strzyżenie · 11:15–12:00</small></div><em>Potwierdzona</em>
+                    </article>
+                    <article class="booking booking-blue" style="--top: 66%; --height: 24%">
+                      <span class="client-avatar av3">JL</span><div><strong>Julia Lis</strong><small>Balayage · 13:00–14:30</small></div><em>Nowa</em>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card floating-booking">
+            <span class="success-ring">✓</span>
+            <div><small>Nowa rezerwacja online</small><strong>Julia · Balayage</strong><span>czwartek, 13:00</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip shell reveal" aria-label="Zaufali nam">
+        <p>Codziennie wspieramy ponad <strong>2 400</strong> zespołów usługowych</p>
+        <div class="client-logos" aria-hidden="true"><span>FORMA.</span><span>Studio NÓŻ</span><span>auréa</span><span>RITUAL</span><span>FIZJO<span>lab</span></span></div>
+      </section>
+
+      <section class="section shell product-section" id="produkt">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">Jedno źródło prawdy</span><h2>Cała firma w Twoim rytmie.</h2></div>
+          <p>Velori łączy każdy punkt styku z klientem — od pierwszego kliknięcia po płatność i kolejną wizytę.</p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="bento bento-calendar reveal">
+            <div class="bento-copy"><span class="feature-icon">⌗</span><h3>Kalendarz, który myśli naprzód</h3><p>Układa grafik zespołu, pilnuje zasobów i automatycznie wypełnia wolne terminy.</p></div>
+            <div class="week-preview">
+              <div class="week-days"><span>Pon<small>13</small></span><span class="today">Wt<small>14</small></span><span>Śr<small>15</small></span><span>Czw<small>16</small></span><span>Pt<small>17</small></span></div>
+              <div class="week-grid-lines"></div>
+              <div class="week-event ev-a"><b>09:00</b> Marta K.</div>
+              <div class="week-event ev-b"><b>11:30</b> Julia L.</div>
+              <div class="week-event ev-c"><b>13:00</b> Anna N.</div>
+              <div class="week-event ev-d"><b>15:15</b> Piotr W.</div>
+            </div>
+          </article>
+          <article class="bento bento-client reveal delay-1">
+            <div class="bento-copy"><span class="feature-icon">◎</span><h3>Klientów znasz po imieniu</h3><p>Historia, preferencje i notatki są zawsze pod ręką — dokładnie wtedy, gdy ich potrzebujesz.</p></div>
+            <div class="client-profile">
+              <div class="profile-head"><span class="profile-photo">MK</span><div><strong>Marta Kwiatkowska</strong><small>Klientka od 2023</small></div><button>•••</button></div>
+              <div class="profile-tags"><span>VIP</span><span>koloryzacja</span><span>poranne wizyty</span></div>
+              <div class="profile-stats"><div><small>Wizyty</small><strong>18</strong></div><div><small>Wartość</small><strong>4 920 zł</strong></div></div>
+              <div class="profile-note"><span>✦</span><p>Preferuje chłodne odcienie. Przypomnij o kuracji Olaplex.</p></div>
+            </div>
+          </article>
+          <article class="bento bento-payments reveal">
+            <div class="bento-copy"><span class="feature-icon">↗</span><h3>Płatności bez niezręczności</h3><p>Zaliczki, linki do płatności i rozliczenia dnia. Szybko dla klienta, przejrzyście dla Ciebie.</p></div>
+            <div class="payment-stack">
+              <div class="payment-card back"><span>VELORI PAY</span></div>
+              <div class="payment-card front"><span>Wpływy dzisiaj</span><strong>1 840,00 zł</strong><div class="payment-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>10 opłaconych wizyt <em>+14%</em></small></div>
+            </div>
+          </article>
+          <article class="bento bento-automation reveal delay-1">
+            <div class="bento-copy"><span class="feature-icon">✦</span><h3>Mniej pustych foteli</h3><p>Inteligentne przypomnienia i lista rezerwowa zmniejszają liczbę nieobecności średnio o 42%.</p></div>
+            <div class="message-flow">
+              <div class="message-time"><span></span>24h przed wizytą<span></span></div>
+              <div class="sms-bubble"><div class="sms-logo"><span class="brand-mark small"><i></i><i></i></span></div><p>Cześć Aniu! Przypominamy o jutrzejszej wizycie o 11:15. Potwierdzasz?</p><small>Velori · 11:15</small></div>
+              <div class="reply-bubble">Tak, będę! <span>11:17 ✓✓</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section operating-section" id="dla-kogo">
+        <div class="shell">
+          <div class="section-heading centered reveal"><div><span class="section-kicker">Zaprojektowane dla usług</span><h2>Proste na zewnątrz.<br />Potężne pod spodem.</h2></div><p>Velori automatyzuje codzienną pracę, ale nigdy nie staje między Tobą a klientem.</p></div>
+          <div class="workflow reveal">
+            <div class="workflow-visual">
+              <div class="orb-core"><span class="brand-mark"><i></i><i></i></span><em>VELORI</em></div>
+              <div class="workflow-node node-1"><span>01</span><div><small>08:42</small><strong>Klient rezerwuje online</strong></div></div>
+              <div class="workflow-node node-2"><span>02</span><div><small>08:42</small><strong>Zaliczka opłacona</strong></div></div>
+              <div class="workflow-node node-3"><span>03</span><div><small>Automatycznie</small><strong>Termin trafia do grafiku</strong></div></div>
+              <div class="workflow-node node-4"><span>04</span><div><small>Dzień wcześniej</small><strong>SMS z przypomnieniem</strong></div></div>
+              <svg class="flow-lines" viewBox="0 0 700 500" preserveAspectRatio="none" aria-hidden="true"><path d="M350 250 C235 250,260 80,125 80"/><path d="M350 250 C480 250,460 80,585 80"/><path d="M350 250 C230 260,260 425,110 425"/><path d="M350 250 C470 260,455 425,595 425"/></svg>
+            </div>
+            <div class="workflow-copy">
+              <span class="section-kicker">Automatyzacje, które brzmią po ludzku</span>
+              <h3>Ty budujesz relacje.<br />Velori pilnuje reszty.</h3>
+              <p>Od rezerwacji po powrót klienta — każdy krok dzieje się we właściwym czasie, bez przeklejania danych i ręcznego przypominania.</p>
+              <ul>
+                <li><span>✓</span>Rezerwacje online 24/7</li>
+                <li><span>✓</span>SMS-y i e-maile z Twoim brandingiem</li>
+                <li><span>✓</span>Lista rezerwowa uzupełniająca luki</li>
+                <li><span>✓</span>Raporty, które rozumiesz od razu</li>
+              </ul>
+              <a href="#cennik">Poznaj wszystkie możliwości <span>→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section results-section shell">
+        <div class="results-card reveal">
+          <div class="results-copy"><span class="section-kicker">Efekt Velori</span><h2>Mniej „czy termin aktualny?”.<br />Więcej „do zobaczenia”.</h2><p>Dane z ostatnich 12 miesięcy pokazują, jak zmienia się codzienność firm po wdrożeniu Velori.</p></div>
+          <div class="result-numbers">
+            <div><strong data-count="42">0</strong><em>%</em><span>mniej nieobecności</span></div>
+            <div><strong data-count="7">0</strong><em>h</em><span>odzyskanych tygodniowo</span></div>
+            <div><strong data-count="18">0</strong><em>%</em><span>wyższe obłożenie</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stories-section shell" id="opinie">
+        <div class="section-heading reveal"><div><span class="section-kicker">Historie naszych klientów</span><h2>Rośnij po swojemu.</h2></div><div class="story-controls"><button class="story-prev" aria-label="Poprzednia opinia">←</button><button class="story-next" aria-label="Następna opinia">→</button></div></div>
+        <div class="stories-track" aria-live="polite">
+          <article class="story active">
+            <div class="quote-mark">“</div><blockquote>Wcześniej mój dzień zaczynał się od odpisywania na wiadomości. Teraz otwieram Velori i wszystko jest już poukładane. Po raz pierwszy mam poczucie, że system dopasował się do mnie, nie odwrotnie.</blockquote>
+            <div class="story-person"><span>OL</span><div><strong>Oliwia Lewandowska</strong><small>Właścicielka, Atelier Forma · Poznań</small></div></div>
+            <div class="story-metric"><strong>+23%</strong><span>więcej rezerwacji<br />w 4 miesiące</span></div>
+          </article>
+          <article class="story">
+            <div class="quote-mark">“</div><blockquote>Zespół wdrożył się w jeden dzień. Największa zmiana? Koniec telefonów między gabinetami i pełna jasność, kto, gdzie i z kim pracuje.</blockquote>
+            <div class="story-person"><span>KP</span><div><strong>Karol Piasecki</strong><small>Założyciel, FizjoLab · Wrocław</small></div></div>
+            <div class="story-metric"><strong>6,5 h</strong><span>oszczędności<br />każdego tygodnia</span></div>
+          </article>
+          <article class="story">
+            <div class="quote-mark">“</div><blockquote>Zaliczki i automatyczna lista rezerwowa praktycznie rozwiązały problem pustych terminów. A klientki mówią, że wreszcie rezerwacja jest tak premium jak nasza usługa.</blockquote>
+            <div class="story-person"><span>NS</span><div><strong>Natalia Sowa</strong><small>Founder, Auréa Skin · Warszawa</small></div></div>
+            <div class="story-metric"><strong>−61%</strong><span>pustych terminów<br />po 8 tygodniach</span></div>
+          </article>
+          <div class="story-dots"><button class="active" aria-label="Pokaż opinię 1"></button><button aria-label="Pokaż opinię 2"></button><button aria-label="Pokaż opinię 3"></button></div>
+        </div>
+      </section>
+
+      <section class="section pricing-section shell" id="cennik">
+        <div class="pricing-card reveal">
+          <div class="pricing-copy"><span class="section-kicker">Prosty start. Zero ryzyka.</span><h2>14 dni, które odmienią<br />Twój sposób pracy.</h2><p>Pełny dostęp do wszystkich funkcji. Bez karty, opłat wdrożeniowych i drobnego druku.</p><div class="pricing-points"><span>✓ Bez karty płatniczej</span><span>✓ Import danych gratis</span><span>✓ Wsparcie człowieka</span></div></div>
+          <div class="price-box"><div class="price-label"><span>Plan Kompletny</span><em>Najczęściej wybierany</em></div><div class="price"><strong>99</strong><div><span>zł</span><small>/ miesiąc</small></div></div><p>dla zespołu do 5 osób</p><button class="button button-primary trial-trigger" type="button">Rozpocznij darmowy okres <span>↗</span></button><small>Potem zdecydujesz, czy zostajesz.</small></div>
+        </div>
+      </section>
+
+      <section class="final-cta shell reveal" id="demo">
+        <div class="cta-glow"></div><span class="brand-mark large"><i></i><i></i></span><h2>Twoja firma.<br /><span>Wreszcie poukładana.</span></h2><p>Dołącz do 2 400+ właścicieli, którzy odzyskali czas na to, co naprawdę rozwija ich biznes.</p><div class="hero-actions"><button class="button button-primary trial-trigger" type="button">Zacznij 14 dni za darmo <span>↗</span></button><button class="button button-ghost demo-trigger" type="button"><span class="play-icon">▶</span> Obejrzyj demo</button></div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <div class="footer-main"><div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark"><i></i><i></i></span><span>velori</span></a><p>Technologia, która zostawia więcej miejsca na człowieka.</p><span>Made with care in Poland.</span></div><div class="footer-links"><div><strong>Produkt</strong><a href="#produkt">Funkcje</a><a href="#cennik">Cennik</a><a href="#demo">Demo</a><a href="#">Integracje</a></div><div><strong>Firma</strong><a href="#opinie">Klienci</a><a href="#">O nas</a><a href="#">Kariera <em>2</em></a><a href="#">Kontakt</a></div><div><strong>Pomoc</strong><a href="#">Centrum pomocy</a><a href="#">Status systemu</a><a href="#">RODO</a><a href="#">Bezpieczeństwo</a></div></div></div>
+      <div class="footer-bottom"><span>© 2026 Velori Technologies sp. z o.o.</span><div><a href="#">Prywatność</a><a href="#">Regulamin</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div></div>
+    </footer>
+
+    <dialog class="signup-dialog" id="signup-dialog">
+      <button class="dialog-close" type="button" aria-label="Zamknij">×</button>
+      <div class="dialog-brand"><span class="brand-mark"><i></i><i></i></span><span>velori</span></div>
+      <div class="signup-step active" data-step="form"><span class="section-kicker">14 dni bez zobowiązań</span><h2>Zacznijmy od Twojej firmy.</h2><p>Skonfigurujemy pierwsze konto w mniej niż 2 minuty.</p><form id="trial-form"><label>Nazwa firmy<input name="company" type="text" placeholder="np. Atelier Forma" required /></label><label>E-mail służbowy<input name="email" type="email" placeholder="ty@twojafirma.pl" required /></label><label>Rodzaj działalności<select name="type" required><option value="">Wybierz branżę</option><option>Salon fryzjerski</option><option>Beauty & wellness</option><option>Fizjoterapia</option><option>Treningi i sport</option><option>Inne usługi</option></select></label><button class="button button-primary" type="submit">Utwórz darmowe konto <span>↗</span></button></form><small>Tworząc konto, akceptujesz regulamin i politykę prywatności.</small></div>
+      <div class="signup-step success-step" data-step="success"><span class="success-ring large">✓</span><h2>Miło Cię poznać!</h2><p>Twoje konto demonstracyjne jest gotowe. W prawdziwym produkcie właśnie przeszlibyśmy do konfiguracji kalendarza.</p><button class="button button-primary dialog-finish" type="button">Wróć na stronę</button></div>
+    </dialog>
+
+    <dialog class="demo-dialog" id="demo-dialog">
+      <button class="dialog-close" type="button" aria-label="Zamknij">×</button><div class="demo-screen"><div class="demo-play"><span>▶</span></div><div class="demo-caption"><span>VELORI / PRODUCT TOUR</span><strong>Twój dzień. W pełnej kontroli.</strong><small>02:04</small></div></div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
