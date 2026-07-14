@@ -1,0 +1,9 @@
+{
+  "name": "Keene Works",
+  "short_name": "Keene Works",
+  "description": "Projektowanie i tworzenie nowoczesnych stron internetowych.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0c2f4a"
+}

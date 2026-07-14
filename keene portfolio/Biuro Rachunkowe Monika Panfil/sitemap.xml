@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Strona główna -->
+  <url>
+    <loc>https://biuropanfil.pl/</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Polityka prywatności -->
+  <url>
+    <loc>https://biuropanfil.pl/polityka-prywatnosci.html</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Keene Works projektuje i tworzy szybkie, dostępne strony internetowe dla firm. Trzyosobowy zespół, przejrzysty proces i rozwiązania dopasowane do celu."
+    />
+    <meta name="theme-color" content="#0c2f4a" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:title" content="Keene Works - strony internetowe, które dobrze pracują" />
+    <meta
+      property="og:description"
+      content="Projektujemy i wdrażamy nowoczesne strony internetowe dla firm. Bez zbędnych komplikacji."
+    />
+    <meta property="og:url" content="https://keeneworks.pl/" />
+    <link rel="canonical" href="https://keeneworks.pl/" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Keene Works - projektowanie i tworzenie stron internetowych</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+    <header class="site-header" data-header>
+      <div class="container nav-wrap">
+        <a class="brand" href="#start" aria-label="Keene Works - strona główna">
+          <img class="brand-mark" src="logo.png" alt="" aria-hidden="true" width="34" height="34" />
+          <span>Keene Works</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+          aria-label="Otwórz menu"
+          data-menu-toggle
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-navigation" aria-label="Główna nawigacja" data-nav>
+          <a href="#uslugi">Usługi</a>
+          <a href="#o-nas">O nas</a>
+          <a href="#proces">Proces</a>
+          <a href="#realizacje">Realizacje</a>
+          <a class="nav-cta" href="#kontakt">Porozmawiajmy <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="start">
+        <div class="hero-grid-bg" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Projektujemy. Kodujemy. Dowozimy.</p>
+            <h1>Strony internetowe, które <em>dobrze pracują.</em></h1>
+            <p class="hero-lead">
+              Pomagamy firmom uporządkować obecność w sieci. Łączymy przemyślany projekt,
+              solidny kod i partnerską współpracę - od pierwszej rozmowy po publikację.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#kontakt">
+                Opowiedz nam o projekcie <span aria-hidden="true">↗</span>
+              </a>
+              <a class="text-link" href="#uslugi">Zobacz, co robimy <span aria-hidden="true">↓</span></a>
+            </div>
+            <ul class="hero-proof" aria-label="Najważniejsze cechy współpracy">
+              <li><span aria-hidden="true">✓</span> Jasny zakres</li>
+              <li><span aria-hidden="true">✓</span> Bezpośredni kontakt</li>
+              <li><span aria-hidden="true">✓</span> Kod na własność</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Wizualizacja procesu tworzenia strony">
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="browser-card">
+              <div class="browser-bar">
+                <div class="browser-dots"><i></i><i></i><i></i></div>
+                <span>keeneworks.pl</span>
+                <span class="browser-status">live</span>
+              </div>
+              <div class="browser-body">
+                <div class="mock-nav"><b>KW.</b><i></i><i></i><i></i></div>
+                <div class="mock-content">
+                  <span class="mock-tag">Dobry projekt ma cel</span>
+                  <strong>Pomysł zamieniony<br />w użyteczną stronę.</strong>
+                  <div class="mock-lines"><i></i><i></i></div>
+                  <span class="mock-button">Zacznijmy →</span>
+                </div>
+                <div class="mock-panel">
+                  <span>Wynik jakości</span>
+                  <b>98<span>/100</span></b>
+                  <div><i></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-note note-code" aria-hidden="true">
+              <span>&lt;/&gt;</span>
+              <p><b>Czysty kod</b><small>gotowy do rozwoju</small></p>
+            </div>
+            <div class="floating-note note-team" aria-hidden="true">
+              <div class="mini-avatars"><i>M</i><i>K</i><i>S</i></div>
+              <p><b>3 specjalistów</b><small>jeden zgrany zespół</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="container hero-bottom">
+          <p>Dobry start dla</p>
+          <div>
+            <span>małych firm</span><i></i><span>usług lokalnych</span><i></i><span>marek osobistych</span><i></i><span>nowych produktów</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="uslugi">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> Co robimy</p>
+              <h2>Od pomysłu do strony,<br />która ma sens.</h2>
+            </div>
+            <p>
+              Nie dokładamy technologii dla samej technologii. Dobieramy rozwiązania do celu,
+              budżetu i sposobu, w jaki strona ma wspierać Twój biznes.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <div class="service-number">01</div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M8 12h32v24H8zM8 18h32M14 15h.1M19 15h.1M24 15h.1M14 25h12M14 30h20" /></svg>
+              </div>
+              <h3>Strony firmowe</h3>
+              <p>Przejrzyste i wiarygodne strony, które jasno pokazują ofertę i ułatwiają klientom pierwszy kontakt.</p>
+              <ul><li>Projekt UX/UI</li><li>Responsywne wdrożenie</li><li>Podstawowe SEO</li></ul>
+            </article>
+
+            <article class="service-card featured reveal">
+              <div class="service-number">02</div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M7 11h34v26H7zM7 18h34M16 25h16M16 31h10M11 14h.1M15 14h.1" /></svg>
+              </div>
+              <h3>Landing page</h3>
+              <p>Skupione na jednym celu strony kampanii, usług i produktów - szybkie, czytelne i gotowe do mierzenia efektów.</p>
+              <ul><li>Architektura treści</li><li>Projekt nastawiony na cel</li><li>Analityka i integracje</li></ul>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-number">03</div>
+              <div class="service-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="m10 31 9-9 7 7 12-14M31 15h7v7M9 38h30" /></svg>
+              </div>
+              <h3>Rozwój i opieka</h3>
+              <p>Modernizacja istniejących stron, optymalizacja szybkości oraz bieżące wsparcie po wdrożeniu.</p>
+              <ul><li>Audyt techniczny</li><li>Optymalizacja wydajności</li><li>Stały rozwój</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="o-nas">
+        <div class="container about-layout">
+          <div class="about-copy reveal">
+            <p class="eyebrow eyebrow-light"><span></span> Keene Works od środka</p>
+            <h2>Mały zespół.<br />Pełna odpowiedzialność.</h2>
+            <p class="about-lead">
+              Keene Works tworzą Michał, Kamil i Szymon. Jesteśmy programistami, którzy lubią
+              dobrze poukładane projekty, konkretną komunikację i rozwiązania, które można
+              rozwijać bez zaczynania wszystkiego od nowa.
+            </p>
+            <p>
+              Pracujesz bezpośrednio z osobami odpowiedzialnymi za projekt i kod. Dzięki temu
+              decyzje podejmujemy szybciej, a ważne informacje nie giną między kolejnymi szczeblami.
+            </p>
+            <div class="about-stats">
+              <div><b>3</b><span>osoby w zespole</span></div>
+              <div><b>1</b><span>wspólny standard pracy</span></div>
+              <div><b>0</b><span>zbędnych pośredników</span></div>
+            </div>
+          </div>
+
+          <div class="team-grid reveal">
+            <article class="person-card person-main">
+              <div class="person-avatar">M</div>
+              <div><h3>Michał</h3><p>Frontend &amp; UI</p></div>
+              <span class="person-dot" aria-hidden="true"></span>
+            </article>
+            <article class="person-card">
+              <div class="person-avatar">K</div>
+              <div><h3>Kamil</h3><p>Development</p></div>
+              <span class="person-dot" aria-hidden="true"></span>
+            </article>
+            <article class="person-card">
+              <div class="person-avatar">S</div>
+              <div><h3>Szymon</h3><p>Development</p></div>
+              <span class="person-dot" aria-hidden="true"></span>
+            </article>
+            <div class="team-caption">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              <p>Różne perspektywy.<br /><b>Jeden kierunek.</b></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="proces">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> Jak pracujemy</p>
+              <h2>Przewidywalny proces,<br />bez zgadywania.</h2>
+            </div>
+            <p>Na każdym etapie wiesz, nad czym pracujemy, dlaczego to robimy i co wydarzy się dalej.</p>
+          </div>
+
+          <ol class="process-list">
+            <li class="process-item reveal">
+              <span class="process-index">01</span>
+              <div class="process-title">
+                <span class="process-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </span>
+                <h3>Poznajemy cel</h3>
+              </div>
+              <p>Rozmawiamy o Twojej firmie, odbiorcach, potrzebach i ograniczeniach. Ustalamy zakres oraz priorytety.</p>
+            </li>
+            <li class="process-item reveal">
+              <span class="process-index">02</span>
+              <div class="process-title">
+                <span class="process-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                  </svg>
+                </span>
+                <h3>Projektujemy</h3>
+              </div>
+              <p>Układamy strukturę, treść i wygląd. Pokazujemy projekt, zbieramy uwagi i dopracowujemy kierunek.</p>
+            </li>
+            <li class="process-item reveal">
+              <span class="process-index">03</span>
+              <div class="process-title">
+                <span class="process-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </span>
+                <h3>Wdrażamy</h3>
+              </div>
+              <p>Zamieniamy projekt w szybką i responsywną stronę. Testujemy ją na różnych ekranach i przeglądarkach.</p>
+            </li>
+            <li class="process-item reveal">
+              <span class="process-index">04</span>
+              <div class="process-title">
+                <span class="process-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                  </svg>
+                </span>
+                <h3>Publikujemy</h3>
+              </div>
+              <p>Uruchamiamy stronę, przekazujemy dostęp i instrukcje. Zostajemy dostępni także po starcie.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section work" id="realizacje">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> Nasze realizacje</p>
+              <h2>Miejsce na dobrą pracę.</h2>
+            </div>
+            <p>Trzy różne potrzeby i trzy dopracowane realizacje. Każdą z nich możesz otworzyć w pełnym, interaktywnym podglądzie.</p>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="project-card reveal">
+              <button
+                class="project-card-hit"
+                type="button"
+                aria-label="Otwórz podgląd projektu Velori"
+                data-project-preview
+                data-project-title="Velori"
+                data-project-src="keene%20portfolio/SaaS/index.html"
+              ></button>
+              <div class="project-media project-media-velori" aria-hidden="true">
+                <div class="project-browser-bar">
+                  <span class="project-browser-dots"><i></i><i></i><i></i></span>
+                  <span>velori.app</span>
+                </div>
+                <iframe
+                  class="project-live-frame"
+                  title="Miniaturowy podgląd projektu Velori"
+                  data-preview-src="keene%20portfolio/SaaS/index.html"
+                  loading="lazy"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  sandbox="allow-scripts allow-same-origin"
+                ></iframe>
+                <span class="project-view-icon">↗</span>
+              </div>
+              <div class="project-copy">
+                <div class="project-meta"><span>Landing page · SaaS</span><span>01</span></div>
+                <h3>Velori</h3>
+                <p>Landing page systemu porządkującego rezerwacje, klientów, płatności i komunikację małej firmy usługowej.</p>
+                <span class="project-link">Zobacz projekt <span aria-hidden="true">↗</span></span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <button
+                class="project-card-hit"
+                type="button"
+                aria-label="Otwórz podgląd projektu PUNKT ZERO"
+                data-project-preview
+                data-project-title="PUNKT ZERO"
+                data-project-src="keene%20portfolio/Studio%20Treningowe/index.html"
+              ></button>
+              <div class="project-media project-media-studio" aria-hidden="true">
+                <div class="project-browser-bar">
+                  <span class="project-browser-dots"><i></i><i></i><i></i></span>
+                  <span>punktzero.pl</span>
+                </div>
+                <iframe
+                  class="project-live-frame"
+                  title="Miniaturowy podgląd projektu PUNKT ZERO"
+                  data-preview-src="keene%20portfolio/Studio%20Treningowe/index.html"
+                  loading="lazy"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  sandbox="allow-scripts allow-same-origin"
+                ></iframe>
+                <span class="project-view-icon">↗</span>
+              </div>
+              <div class="project-copy">
+                <div class="project-meta"><span>Strona one-page · Fitness</span><span>02</span></div>
+                <h3>PUNKT ZERO</h3>
+                <p>Strona studia treningu personalnego i funkcjonalnego w Warszawie, z ofertą, grafikiem i zapisem na trening próbny.</p>
+                <span class="project-link">Zobacz projekt <span aria-hidden="true">↗</span></span>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <button
+                class="project-card-hit"
+                type="button"
+                aria-label="Otwórz podgląd projektu Biuro Rachunkowe Monika Panfil"
+                data-project-preview
+                data-project-title="Biuro Rachunkowe Monika Panfil"
+                data-project-src="keene%20portfolio/Biuro%20Rachunkowe%20Monika%20Panfil/index.html"
+              ></button>
+              <div class="project-media project-media-accounting" aria-hidden="true">
+                <div class="project-browser-bar">
+                  <span class="project-browser-dots"><i></i><i></i><i></i></span>
+                  <span>biuropanfil.pl</span>
+                </div>
+                <iframe
+                  class="project-live-frame"
+                  title="Miniaturowy podgląd projektu Biuro Rachunkowe Monika Panfil"
+                  data-preview-src="keene%20portfolio/Biuro%20Rachunkowe%20Monika%20Panfil/index.html"
+                  loading="lazy"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  sandbox="allow-scripts allow-same-origin"
+                ></iframe>
+                <span class="project-view-icon">↗</span>
+              </div>
+              <div class="project-copy">
+                <div class="project-meta"><span>Strona firmowa · Księgowość</span><span>03</span></div>
+                <h3>Biuro Rachunkowe<br />Monika Panfil</h3>
+                <p>Strona biura rachunkowego w Kawęczynie, prezentująca zespół, usługi i możliwość umówienia konsultacji.</p>
+                <span class="project-link">Zobacz projekt <span aria-hidden="true">↗</span></span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="kontakt">
+        <div class="contact-top">
+          <div class="container contact-layout">
+            <div class="contact-intro reveal">
+              <p class="eyebrow eyebrow-light"><span></span> Zróbmy coś dobrego</p>
+              <h2>Masz pomysł na stronę?<br /><em>Porozmawiajmy.</em></h2>
+              <p>
+                Napisz kilka zdań o projekcie. Odpowiemy konkretnie - zwykle w ciągu jednego dnia roboczego.
+              </p>
+              <a class="contact-email" href="mailto:kontakt@keeneworks.pl">
+                <span aria-hidden="true">@</span>
+                <div><small>Wolisz napisać bezpośrednio?</small><b>kontakt@keeneworks.pl</b></div>
+              </a>
+            </div>
+
+            <form class="contact-form reveal" data-contact-form novalidate>
+              <div class="form-row">
+                <label>
+                  <span>Imię i nazwisko <b aria-hidden="true">*</b></span>
+                  <input type="text" name="name" autocomplete="name" placeholder="Jan Kowalski" required />
+                  <small class="field-error">Podaj imię i nazwisko.</small>
+                </label>
+                <label>
+                  <span>Adres e-mail <b aria-hidden="true">*</b></span>
+                  <input type="email" name="email" autocomplete="email" placeholder="jan@firma.pl" required />
+                  <small class="field-error">Podaj poprawny adres e-mail.</small>
+                </label>
+              </div>
+              <label>
+                <span>W czym możemy pomóc?</span>
+                <select name="service">
+                  <option value="Nowa strona firmowa">Nowa strona firmowa</option>
+                  <option value="Landing page">Landing page</option>
+                  <option value="Modernizacja strony">Modernizacja istniejącej strony</option>
+                  <option value="Opieka i rozwój">Opieka i rozwój</option>
+                  <option value="Inny temat">Inny temat</option>
+                </select>
+              </label>
+              <label>
+                <span>Opowiedz krótko o projekcie <b aria-hidden="true">*</b></span>
+                <textarea name="message" rows="5" placeholder="Czego potrzebujesz, jaki jest cel strony i kiedy chciałbyś ją uruchomić?" required minlength="20"></textarea>
+                <small class="field-error">Napisz przynajmniej 20 znaków.</small>
+              </label>
+              <div class="form-bottom">
+                <p>Wysyłając formularz, zgadzasz się na kontakt w sprawie zapytania.</p>
+                <button class="button button-mint" type="submit">Wyślij wiadomość <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="form-status" role="status" aria-live="polite" data-form-status></div>
+            </form>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <div class="container footer-main">
+            <div class="footer-brand">
+              <a class="brand brand-light" href="#start">
+                <img class="brand-mark" src="logo.png" alt="" aria-hidden="true" width="34" height="34" />
+                <span>Keene Works</span>
+              </a>
+              <p>Nowoczesne strony internetowe,<br />tworzone po ludzku.</p>
+            </div>
+            <div class="footer-links">
+              <div><b>Nawigacja</b><a href="#uslugi">Usługi</a><a href="#o-nas">O nas</a><a href="#proces">Proces</a><a href="#realizacje">Realizacje</a></div>
+              <div><b>Kontakt</b><a href="mailto:kontakt@keeneworks.pl">kontakt@keeneworks.pl</a><span>Polska · pracujemy zdalnie</span></div>
+            </div>
+          </div>
+          <div class="container footer-bottom">
+            <span>© <span data-year></span> Keene Works. Wszystkie prawa zastrzeżone.</span>
+            <a href="#start">Wróć na górę <span aria-hidden="true">↑</span></a>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <dialog class="project-dialog" data-project-dialog aria-labelledby="project-dialog-title">
+      <div class="project-dialog-shell">
+        <header class="project-dialog-header">
+          <div>
+            <span>Podgląd realizacji</span>
+            <h2 id="project-dialog-title" data-project-dialog-title>Projekt</h2>
+          </div>
+          <div class="project-dialog-actions">
+            <a data-project-external href="#" target="_blank" rel="noopener">Otwórz w nowej karcie <span aria-hidden="true">↗</span></a>
+            <button type="button" aria-label="Zamknij podgląd projektu" data-project-close>
+              <span aria-hidden="true"></span><span aria-hidden="true"></span>
+            </button>
+          </div>
+        </header>
+        <div class="project-dialog-browser">
+          <div class="project-dialog-bar" aria-hidden="true">
+            <span class="project-browser-dots"><i></i><i></i><i></i></span>
+            <span data-project-address>Podgląd strony</span>
+          </div>
+          <iframe
+            title="Podgląd realizacji"
+            data-project-frame
+            sandbox="allow-scripts allow-forms allow-modals allow-same-origin"
+          ></iframe>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

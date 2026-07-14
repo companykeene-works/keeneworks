@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f7f3ec" />
+
+<!-- Oznacz, że JS jest aktywny, oraz załaduj zapisany motyw (Dark Mode) -->
+<script>
+  document.documentElement.className += ' js';
+  (function() {
+    var savedTheme = localStorage.getItem('theme');
+    var userPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = (savedTheme === 'dark' || (!savedTheme && userPrefersDark)) ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', theme);
+    
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute('content', theme === 'dark' ? '#13110e' : '#f7f3ec');
+    }
+  })();
+</script>
+
+<!-- ===== SEO / meta ===== -->
+<title>Biuro Rachunkowe Monika Panfil - Księgowość z ludzką twarzą | Kawęczyn</title>
+<meta
+  name="description"
+  content="Biuro rachunkowe Monika Panfil w Kawęczynie. 15 lat doświadczenia, osobiste podejście i rzetelna obsługa jednoosobowych firm oraz małych spółek. Umów bezpłatną konsultację."
+/>
+<link rel="canonical" href="https://biuropanfil.pl/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pl_PL" />
+<meta property="og:title" content="Biuro Rachunkowe Monika Panfil - Księgowość z ludzką twarzą" />
+<meta
+  property="og:description"
+  content="15 lat doświadczenia, osobiste podejście i rzetelna obsługa księgowa firm z regionu. Umów bezpłatną konsultację."
+/>
+<meta property="og:url" content="https://biuropanfil.pl/" />
+<meta property="og:image" content="https://biuropanfil.pl/assets/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Ikonki / favicon i manifest -->
+<link rel="icon" href="brmplogo.png" type="image/png" />
+<link rel="apple-touch-icon" href="brmplogo.png" />
+<link rel="manifest" href="manifest.json" />
+
+<!-- ===== Czcionki (Google Fonts) - serif dla nagłówków + sans dla treści ===== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- Dane strukturalne Schema.org -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "Biuro Rachunkowe Monika Panfil",
+    "image": "https://biuropanfil.pl/monika.png",
+    "logo": "https://biuropanfil.pl/brmplogo.png",
+    "@id": "https://biuropanfil.pl/#website",
+    "url": "https://biuropanfil.pl/",
+    "telephone": "+48 603 125 332",
+    "email": "biuro@monikapanfil.pl",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kawęczyn 39D",
+      "addressLocality": "Kawęczyn",
+      "postalCode": "62-704",
+      "addressCountry": "PL"
+    },
+    "taxID": "6681855348",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "16:00"
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61550639055159"
+    ]
+  }
+</script>
+</head>
+<body>
+  <!-- Link ułatwień dostępu -->
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <!-- ==================== HEADER / NAWIGACJA ==================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Biuro Rachunkowe Monika Panfil - strona główna">
+        <img src="brmplogo.png" class="brand-mark" aria-hidden="true" />
+        <span class="brand-text">
+          <span class="brand-name">Monika Panfil</span>
+          <span class="brand-sub">Biuro Rachunkowe</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Nawigacja główna">
+        <ul>
+          <li><a href="#hero">Strona główna</a></li>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#uslugi">Usługi</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a class="phone-link" href="tel:+48603125332">
+          <svg class="ico" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/>
+          </svg>
+          <span>+48 603 125 332</span>
+        </a>
+      </div>
+
+      <!-- Przełącznik motywu (Dark Mode) -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Przełącz motyw" title="Przełącz motyw">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="m6.34 17.66-1.41 1.41"></path>
+          <path d="m19.07 4.93-1.41 1.41"></path>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+      </button>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-label="Otwórz menu"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Biuro rachunkowe w Kawęczynie · region wielkopolski</p>
+          <h1 class="hero-title">
+            Księgowość, której możesz zaufać - prowadzona osobiście.
+          </h1>
+          <p class="hero-lead">
+            Od 15 lat pomagam przedsiębiorcom prowadzić finanse spokojnie i bez stresu.
+            U mnie nie jesteś numerem w systemie - rozmawiasz zawsze z tą samą osobą,
+            która zna Twoją firmę.
+          </p>
+          <div class="hero-media-mobile">
+            <figure class="portrait-frame">
+              <img
+                src="monika.png"
+                alt="Monika Panfil, właścicielka biura rachunkowego"
+                width="800"
+                height="1200"
+                loading="eager"
+              />
+              <figcaption class="portrait-badge">
+                <strong>Monika Panfil</strong>
+                <span>Właścicielka · księgowa</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt">Umów bezpłatną konsultację</a>
+            <a class="btn btn-ghost" href="tel:+48603125332">
+              <svg class="ico" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/>
+              </svg>
+              Zadzwoń: +48 603 125 332
+            </a>
+          </div>
+          <p class="hero-note">Pierwsza rozmowa jest niezobowiązująca i bezpłatna.</p>
+        </div>
+
+        <div class="hero-media reveal">
+          <figure class="portrait-frame">
+            <img
+              src="monika.png"
+              alt="Monika Panfil, właścicielka biura rachunkowego"
+              width="800"
+              height="1200"
+              loading="eager"
+            />
+            <figcaption class="portrait-badge">
+              <strong>Monika Panfil</strong>
+              <span>Właścicielka · księgowa</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PASEK ZAUFANIA ==================== -->
+    <section class="trust-bar" aria-label="Kluczowe informacje o biurze">
+      <div class="container trust-grid">
+        <div class="trust-item reveal">
+          <span class="trust-num">15 lat</span>
+          <span class="trust-label">doświadczenia w księgowości</span>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-num">120+</span>
+          <span class="trust-label">obsłużonych firm i przedsiębiorców</span>
+        </div>
+        <div class="trust-item reveal">
+          <span class="trust-num">24 h</span>
+          <span class="trust-label">deklarowany czas odpowiedzi na e-mail</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== O NAS ==================== -->
+    <section class="section about" id="o-nas">
+      <div class="container about-inner">
+        <div class="about-media reveal">
+          <img
+            src="omnie.png"
+            alt="Monika Panfil podczas pracy w biurze rachunkowym"
+            width="800"
+            height="900"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">O mnie</p>
+          <h2 class="section-title">Nazywam się Monika Panfil i od 15 lat zajmuję się księgowością.</h2>
+          <p>
+            W 2022 roku otworzyłam własne biuro rachunkowe w Kawęczynie, bo wierzę,
+            że dobra księgowość to nie tylko poprawne dokumenty - to spokój i poczucie,
+            że ktoś naprawdę pilnuje Twoich spraw.
+          </p>
+          <p>
+            Pracuję głównie z jednoosobowymi działalnościami oraz małymi firmami z regionu.
+            Znam realia lokalnego biznesu i wiem, że najbardziej cenicie sobie konkretną
+            odpowiedź, dostępność i pewność, że nic nie umknie.
+          </p>
+          <ul class="about-points">
+            <li>
+              <span class="point-ico" aria-hidden="true">✓</span>
+              Stały, bezpośredni kontakt - rozmawiasz zawsze ze mną, nie z infolinią.
+            </li>
+            <li>
+              <span class="point-ico" aria-hidden="true">✓</span>
+              Prosty, zrozumiały język - tłumaczę podatki bez żargonu.
+            </li>
+            <li>
+              <span class="point-ico" aria-hidden="true">✓</span>
+              Obsługa stacjonarna i zdalna - jak Ci wygodniej.
+            </li>
+          </ul>
+          <p class="about-creds">
+            Posiadam ubezpieczenie OC biura rachunkowego.
+          </p>
+        </div>
+      </div>
+
+      <!-- Zespół -->
+      <div class="container team-section reveal">
+        <h3 class="team-title">Poznaj nasz zespół</h3>
+        <div class="team-grid">
+          <!-- Monika Panfil -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="monika.png" alt="Monika Panfil" loading="lazy" />
+            </div>
+            <div class="team-info">
+              <h4>Monika Panfil</h4>
+              <span class="team-role">Właścicielka · Główna Księgowa</span>
+              <p class="team-desc">
+                Założycielka biura z 15-letnim doświadczeniem w księgowości. Odpowiada za strategię, podatki oraz obsługę pełnej księgowości spółek.
+              </p>
+            </div>
+          </div>
+
+          <!-- Malwina Michalak -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="malwina.png" alt="Malwina Michalak" loading="lazy" />
+            </div>
+            <div class="team-info">
+              <h4>Malwina Michalak</h4>
+              <span class="team-role">Księgowa · Kadry i Płace</span>
+              <p class="team-desc">
+                Ekspertka ds. płac, składek ZUS oraz rozliczeń pracowniczych. Prowadzi bieżącą obsługę jednoosobowych działalności gospodarczych (KPiR).
+              </p>
+            </div>
+          </div>
+
+          <!-- Paulina Sambor -->
+          <div class="team-card">
+            <div class="team-photo-wrap">
+              <img src="paulina.png" alt="Paulina Sambor" loading="lazy" />
+            </div>
+            <div class="team-info">
+              <h4>Paulina Sambor</h4>
+              <span class="team-role">Księgowa · Obsługa Klienta</span>
+              <p class="team-desc">
+                Zajmuje się bieżącym księgowaniem dokumentów, rozliczaniem podatku dochodowego oraz kontaktem z klientami w sprawach administracyjnych.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== USŁUGI ==================== -->
+    <section class="section services" id="uslugi">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Usługi</p>
+          <h2 class="section-title">Wszystko, czego potrzebuje Twoja firma - w jednym miejscu.</h2>
+          <p class="section-intro">
+            Od bieżącej księgowości po rozliczenia i kadry. Zakres dopasowuję do wielkości
+            i formy Twojej działalności.
+          </p>
+          <p class="service-price-note">
+            Wycena indywidualna — zależna od formy działalności i liczby dokumentów. Zapytaj o ofertę.
+          </p>
+        </div>
+
+        <div class="service-groups">
+          <!-- Kafel 1: KSeF (Wyróżniony) -->
+          <article class="service-card reveal featured">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+            </span>
+            <h3>KSeF</h3>
+            <p>Kompleksowe przygotowanie i wdrożenie firmy do obsługi Krajowego Systemu e-Faktur. Pomagamy dostosować procesy wystawiania i odbioru faktur ustrukturyzowanych.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 2: Księgi handlowe -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M19 2H6c-1.2 0-2 .8-2 2v16c0 1.2.8 2 2 2h13c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 18H6V4h12v16M8 6h8v2H8V6m0 4h8v2H8v-2m0 4h5v2H8v-2"/></svg>
+            </span>
+            <h3>Księgi handlowe</h3>
+            <p>Pełna księgowość dla spółek prawa handlowego, prowadzenie ksiąg rachunkowych zgodnie z ustawą o rachunkowości.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 3: KPiR -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 4H5V5h14v2M5 11h6V9H5v2zm8 0h6V9h-6v2zm-8 4h6v-2H5v2zm8 0h6v-2h-6v2zm-8 4h6v-2H5v2zm8 0h6v-2h-6v2z"/></svg>
+            </span>
+            <h3>KPiR</h3>
+            <p>Profesjonalne prowadzenie Księgi Przychodów i Rozchodów, ewidencji środków trwałych, wyposażenia oraz pozostałych ewidencji podatkowych.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 4: Ryczałt ewidencjonowany -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-2 14h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V7h4v2zm-6 8H7v-2h4v2zm0-4H7v-2h4v2zm0-4H7V7h4v2z"/></svg>
+            </span>
+            <h3>Ryczałt ewidencjonowany</h3>
+            <p>Prowadzenie ewidencji przychodów dla podatników opodatkowanych ryczałtem, rozliczanie zaliczek na podatek dochodowy oraz składanie deklaracji.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 5: Rozliczanie VAT -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8.5 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M8 16.5l8-9 1.5 1.3-8 9L8 16.5zm8.5 1a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+            </span>
+            <h3>Rozliczanie VAT</h3>
+            <p>Profesjonalne rozliczanie podatku VAT, przygotowywanie i składanie deklaracji VAT, JPK oraz reprezentowanie klienta przed urzędem skarbowym.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 6: Płace -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4m-8 0a4 4 0 1 0-4-4 4 4 0 0 0 4 4m0 2c-3 0-8 1.5-8 4.5V20h9v-2.5A5 5 0 0 1 3.4 14 12 12 0 0 1 8 13m8 0a11 11 0 0 0-1.8.2A5.8 5.8 0 0 1 17 17.5V20h7v-2.5c0-3-5-4.5-8-4.5"/></svg>
+            </span>
+            <h3>Płace</h3>
+            <p>Kompleksowa obsługa kadrowo-płacowa, obejmująca sporządzanie list płac, rozliczanie składek ZUS, deklaracje podatkowe oraz pełną dokumentację pracowniczą.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 7: Założenie firmy -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2m-8-2h4v2h-4V4m8 15H4V8h16v11z"/></svg>
+            </span>
+            <h3>Założenie firmy</h3>
+            <p>Pomoc w wyborze optymalnej formy prawnej działalności, przygotowanie niezbędnych dokumentów oraz wsparcie w procesie rejestracji firmy.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 8: Zeznanie podatkowe -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+            </span>
+            <h3>Zeznanie podatkowe</h3>
+            <p>Przygotowanie rocznych zeznań podatkowych dla osób fizycznych oraz spółek, z uwzględnieniem wszelkich dostępnych ulg i odliczeń.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+
+          <!-- Kafel 9: Rozliczanie podatku z zagranicy -->
+          <article class="service-card reveal">
+            <span class="service-ico" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </span>
+            <h3>Rozliczanie podatku z zagranicy</h3>
+            <p>Kompleksowa pomoc w rozliczaniu dochodów uzyskanych za granicą, z uwzględnieniem umów o unikaniu podwójnego opodatkowania.</p>
+            <a class="service-link" href="#kontakt">Dowiedz się więcej →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== OPINIE KLIENTÓW ==================== -->
+    <section class="section testimonials" id="opinie">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Opinie</p>
+          <h2 class="section-title">Co mówią o nas nasi klienci.</h2>
+        </div>
+
+        <div class="google-reviews-widget" id="reviews-container">
+          <!-- Placeholder dla opinii -->
+          <div class="cookie-placeholder" id="reviews-cookie-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 350px; background: rgba(0,0,0,0.03); border: 1px dashed var(--line); border-radius: var(--radius); text-align: center; padding: 2rem;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--gold)" style="margin-bottom: 1rem;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <p style="margin-bottom: 1rem; color: var(--ink);">Wyświetlenie opinii z Google wymaga akceptacji plików cookies.</p>
+            <button class="btn btn-ghost manage-consent-btn" style="border: 1px solid var(--line);">Zmień ustawienia cookies</button>
+          </div>
+          <div class="elfsight-app-04ef9a67-5977-4b15-986b-1dc16af521dc"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Najczęstsze pytania</p>
+          <h2 class="section-title">Zanim się zdecydujesz - kilka odpowiedzi.</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>Jak wygląda proces przejścia do nowego biura rachunkowego?</summary>
+            <div class="faq-answer">
+              <p>
+                Prościej, niż myślisz. Podpisujemy umowę i pełnomocnictwo, ustalam z Twoim
+                dotychczasowym biurem przekazanie dokumentów, a następnie sprawdzam, czy wszystko
+                się zgadza. Zmianę biura można przeprowadzić w praktyce w każdym momencie roku -
+                zajmuję się formalnościami za Ciebie.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Czy obsługujecie klientów zdalnie?</summary>
+            <div class="faq-answer">
+              <p>
+                Tak. Dokumenty możesz dostarczać osobiście, ale równie dobrze zdalnie -
+                skanem, zdjęciem lub przez e-mail. Wielu klientów obsługuję w pełni online,
+                niezależnie od tego, gdzie prowadzą firmę.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Jak szybko odpowiadacie na pytania?</summary>
+            <div class="faq-answer">
+              <p>
+                Na wiadomości staram się odpowiadać tego samego dnia roboczego, a najpóźniej
+                w ciągu 24 godzin. W pilnych sprawach zawsze możesz też zadzwonić - nie chowam się
+                za infolinią.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Nie znam się na księgowości - czy to problem?</summary>
+            <div class="faq-answer">
+              <p>
+                Absolutnie nie. Od tego jestem. Tłumaczę wszystko zrozumiałym językiem
+                i podpowiadam, o czym trzeba pamiętać. Twoim zadaniem jest prowadzić firmę -
+                księgowość zostaw mnie.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Dla jakich firm prowadzicie księgowość?</summary>
+            <div class="faq-answer">
+              <p>
+                Głównie dla jednoosobowych działalności (JDG) i małych spółek - na ryczałcie,
+                KPiR oraz pełnej księgowości. Jeśli dopiero zakładasz firmę, pomogę Ci wybrać
+                najkorzystniejszą formę opodatkowania.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KONTAKT ==================== -->
+    <section class="section contact" id="kontakt">
+      <div class="container contact-inner">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2 class="section-title">Porozmawiajmy o Twojej firmie.</h2>
+          <p class="section-intro">
+            Umów bezpłatną, niezobowiązującą konsultację. Odpowiem na pytania i podpowiem,
+            jak mogę pomóc.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5"/></svg>
+              </span>
+              <span>
+                <strong>Adres</strong><br />
+                Kawęczyn 39D<br />
+                62-704 Kawęczyn, woj. wielkopolskie
+              </span>
+            </li>
+            <li>
+              <span class="contact-ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1m2 4v2h6V9zm0 4v2h6v-2zm9-4v6h3V9z"/></svg>
+              </span>
+              <span>
+                <strong>NIP</strong><br />
+                6681855348
+              </span>
+            </li>
+            <li>
+              <span class="contact-ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
+              </span>
+              <span>
+                <strong>Telefon</strong><br />
+                <a href="tel:+48603125332">+48 603 125 332</a>
+              </span>
+            </li>
+            <li>
+              <span class="contact-ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 4v10h16V8l-8 5z"/></svg>
+              </span>
+              <span>
+                <strong>E-mail</strong><br />
+                <a href="mailto:biuro@monikapanfil.pl">biuro@monikapanfil.pl</a>
+              </span>
+            </li>
+            <li>
+              <span class="contact-ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m1 10.6 4 2.3-1 1.7-5-2.9V6h2z"/></svg>
+              </span>
+              <span>
+                <strong>Godziny pracy</strong><br />
+                Pon.–Pt. 8:00–16:00<br />
+                Sob.–Niedz. nieczynne
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <!--
+            Formularz kontaktowy.
+            Więcej informacji o konfiguracji w pliku script.js.
+          -->
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-row">
+              <label for="cf-name">Imię i nazwisko *</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="cf-email">E-mail *</label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-row">
+                <label for="cf-phone">Telefon</label>
+                <input id="cf-phone" name="phone" type="tel" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="cf-topic">Czego dotyczy sprawa?</label>
+              <select id="cf-topic" name="topic">
+                <option value="">- wybierz -</option>
+                <option>Prowadzenie księgowości (JDG)</option>
+                <option>Prowadzenie księgowości (spółka)</option>
+                <option>Kadry i płace</option>
+                <option>Założenie firmy</option>
+                <option>Inne</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="cf-message">Wiadomość *</label>
+              <textarea id="cf-message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-row form-consent">
+              <input id="cf-consent" name="consent" type="checkbox" required />
+              <label for="cf-consent">
+                Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na zapytanie.
+                (<a href="polityka-prywatnosci.html">Polityka prywatności</a>)
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Wyślij wiadomość</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Interaktywne multimedia kontaktowe (Mapa + Wideo) -->
+      <div class="container">
+        <div class="contact-media-grid">
+          <div class="map-column reveal">
+            <h3 class="media-title">Jak do nas dojechać</h3>
+            <div class="map-wrap" id="map-container">
+              <!-- Placeholder dla mapy -->
+              <div class="cookie-placeholder" id="map-cookie-placeholder" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 250px; background: rgba(0,0,0,0.03); border: 1px dashed var(--line); border-radius: var(--radius); text-align: center; padding: 2rem;">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--gold)" style="margin-bottom: 1rem;"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/></svg>
+                <p style="margin-bottom: 1rem; color: var(--ink);">Wyświetlenie mapy wymaga akceptacji plików cookies.</p>
+                <button class="btn btn-ghost manage-consent-btn" style="border: 1px solid var(--line);">Zmień ustawienia cookies</button>
+              </div>
+              <iframe
+                id="google-map-iframe"
+                class="map-frame"
+                title="Mapa - lokalizacja biura rachunkowego Monika Panfil w Kawęczynie"
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4339.6649890947565!2d18.53112387784923!3d51.90669987190686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ae120deaff589%3A0x70fcd3240fc0513e!2sBiuro%20Rachunkowe%20Monika%20Panfil!5e1!3m2!1spl!2spl!4v1783600144494!5m2!1spl!2spl"
+                style="border:0; display: none;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+          
+          <div class="video-column reveal">
+            <h3 class="media-title">Zobacz nasze biuro z lotu ptaka</h3>
+            <div class="video-wrap">
+              <div class="video-container">
+                <video
+                  id="dron-video"
+                  class="video-frame"
+                  title="Prezentacja wideo biura z drona"
+                  src="biuro%20dron.webm"
+                  poster="miniatura.jpg"
+                  preload="none"
+                  muted
+                  loop
+                  playsinline
+                ></video>
+                <button class="custom-play-btn" aria-label="Odtwórz wideo" onclick="playDronVideo()">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Biuro Rachunkowe Monika Panfil - strona główna">
+          <img src="brmplogo.png" class="brand-mark" aria-hidden="true" />
+          <span class="brand-text">
+            <span class="brand-name">Monika Panfil</span>
+            <span class="brand-sub">Biuro Rachunkowe</span>
+          </span>
+        </a>
+        <p class="footer-tagline">Księgowość prowadzona osobiście, z dbałością o szczegóły.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Nawigacja w stopce">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#uslugi">Usługi</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3>Kontakt</h3>
+        <ul>
+          <li>Kawęczyn 39D, 62-704 Kawęczyn, woj. wielkopolskie</li>
+          <li><a href="tel:+48603125332">+48 603 125 332</a></li>
+          <li><a href="mailto:biuro@monikapanfil.pl">biuro@monikapanfil.pl</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61550639055159" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M13 22v-8h3l.5-3H13V9c0-.9.3-1.5 1.6-1.5H17V4.8A21 21 0 0 0 14.7 4.7C12.4 4.7 11 6 11 8.7V11H8v3h3v8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div>
+          <p>&copy; <span id="year">2026</span> Biuro Rachunkowe Monika Panfil. Wszelkie prawa zastrzeżone.</p>
+          <p class="footer-links">
+            <a href="polityka-prywatnosci.html">Polityka prywatności</a> · 
+            <a href="#" class="manage-consent-btn">Zarządzaj zgodą na cookies</a>
+          </p>
+        </div>
+        <p class="footer-made">NIP: 6681855348</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Contact Bar -->
+  <div class="mobile-contact-bar">
+    <a href="tel:+48603125332" class="btn btn-primary">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right: 6px;"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
+      Zadzwoń
+    </a>
+    <a href="#kontakt" class="btn btn-ghost">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right: 6px;"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Napisz
+    </a>
+  </div>
+
+  <!-- Baner Cookies -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-labelledby="cookie-banner-title">
+    <h4 id="cookie-banner-title" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Polityka cookies</h4>
+    <div class="cookie-banner-text">
+      Ta strona korzysta z ciasteczek (cookies), aby zapewnić najwyższą jakość usług. Możesz zaakceptować działanie opcjonalnych plików cookie, w tym statystyk Google Analytics, lub je odrzucić. Szczegóły znajdziesz w naszej 
+      <a href="polityka-prywatnosci.html">Polityce prywatności</a>.
+    </div>
+    <div class="cookie-banner-actions">
+      <button id="cookie-decline" class="btn btn-ghost">Odrzuć</button>
+      <button id="cookie-accept" class="btn btn-primary">Akceptuję</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Biuro Rachunkowe Monika Panfil",
+  "short_name": "Biuro Panfil",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3ec",
+  "theme_color": "#f7f3ec",
+  "lang": "pl",
+  "icons": [
+    {
+      "src": "brmplogo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
