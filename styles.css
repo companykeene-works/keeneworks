@@ -275,10 +275,13 @@ img, svg { display: block; max-width: 100%; }
 .contact h2 { font-size: clamp(42px, 4.5vw, 61px); }
 .contact h2 em { color: var(--mint); }
 .contact-intro > p:not(.eyebrow) { max-width: 430px; margin: 25px 0 35px; color: rgba(255,255,255,.62); }
-.contact-email { display: flex; align-items: center; gap: 13px; }
-.contact-email > span { width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid rgba(143,185,181,.35); border-radius: 50%; color: var(--mint); font-weight: 700; }
-.contact-email small { display: block; color: rgba(255,255,255,.45); font-size: 10px; }
-.contact-email b { color: white; font-size: 14px; }
+.contact-channels { display: grid; gap: 12px; }
+.contact-channel { display: flex; align-items: center; gap: 13px; width: fit-content; }
+.contact-channel > span { width: 42px; height: 42px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid rgba(143,185,181,.35); border-radius: 50%; color: var(--mint); font-weight: 700; transition: background .2s ease, color .2s ease, transform .2s ease; }
+.contact-channel:hover > span { transform: translateY(-2px); background: var(--mint); color: var(--navy); }
+.contact-channel small { display: block; color: rgba(255,255,255,.45); font-size: 10px; }
+.contact-channel b { color: white; font-size: 14px; }
+.contact-facebook svg { width: 19px; height: 19px; fill: currentColor; }
 .contact-form { padding: 38px; border: 1px solid rgba(255,255,255,.13); border-radius: 18px; background: rgba(255,255,255,.06); box-shadow: 0 22px 60px rgba(0,0,0,.12); backdrop-filter: blur(8px); }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
 .contact-form label { display: block; margin-bottom: 20px; }
@@ -310,6 +313,9 @@ img, svg { display: block; max-width: 100%; }
 .footer-links b { margin-bottom: 7px; color: rgba(255,255,255,.34); font-size: 9px; letter-spacing: 1px; text-transform: uppercase; }
 .footer-links a, .footer-links span { color: rgba(255,255,255,.7); font-size: 12px; }
 .footer-links a:hover { color: var(--mint); }
+.footer-facebook { display: inline-flex; align-items: center; gap: 7px; }
+.footer-facebook svg { width: 14px; height: 14px; fill: currentColor; }
+.footer-facebook span { color: inherit; }
 .footer-bottom { min-height: 70px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.08); color: rgba(255,255,255,.32); font-size: 10px; }
 .footer-bottom a { color: rgba(255,255,255,.58); }
 .footer-bottom a span { color: var(--mint); }
@@ -375,7 +381,8 @@ img, svg { display: block; max-width: 100%; }
   .contact-intro { text-align: center; }
   .contact-intro .eyebrow { justify-content: center; }
   .contact-intro > p { margin-inline: auto !important; }
-  .contact-email { justify-content: center; text-align: left; }
+  .contact-channels { justify-items: center; }
+  .contact-channel { justify-content: center; text-align: left; }
 }
 
 @media (max-width: 580px) {
