@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Farina & Brace — pizza neapolitańska z pieca opalanego drewnem. Warszawa, Praga-Północ. Zamów online lub zarezerwuj stolik." />
+    <meta name="theme-color" content="#f3eadb" />
+    <title>Farina & Brace — Pizza Napoletana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloock&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+
+    <div class="announcement" id="top" aria-label="Informacja">
+      <span>Ogień rozpalamy codziennie o 12:00</span>
+      <span class="announcement__dot" aria-hidden="true"></span>
+      <span>Dostawa na Pradze do 4 km</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Farina & Brace — strona główna">
+        <span class="brand__seal" aria-hidden="true">F<span>&</span>B</span>
+        <span class="brand__text">Farina <i>&</i> Brace<small>pizza napoletana</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span class="sr-only">Otwórz menu</span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Główna nawigacja">
+        <a href="./menu.html">Menu</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#rezerwacja">Rezerwacje</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <button class="header-order" type="button" data-open-cart>
+        Zamów online
+        <span class="cart-count" data-cart-count aria-label="Liczba produktów">0</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span>Praga · Warszawa</span><span>Est. 2021</span></p>
+          <h1 id="hero-title">Ciasto, ogień,<br /><em>cierpliwość.</em></h1>
+          <p class="hero__lead">Pizza neapolitańska bez pośpiechu. Ciasto dojrzewa 72 godziny, a potem trafia na 90 sekund do pieca opalanego bukowym drewnem.</p>
+          <div class="hero__actions">
+            <button class="button button--primary" type="button" data-open-cart>
+              Zamów z odbiorem
+              <span aria-hidden="true">↗</span>
+            </button>
+            <a class="text-link" href="./menu.html">Poznaj nasze menu <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero__meta" aria-label="Najważniejsze informacje">
+            <p><strong>Dziś</strong><span>12:00—23:00</span></p>
+            <p><strong>Adres</strong><span>ul. Stalowa 17, Warszawa</span></p>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--right">
+          <div class="hero__image-wrap">
+            <img src="./assets/hero-pizza.webp" alt="Neapolitańska margherita z wyrośniętym, wypieczonym brzegiem obok rozpalonego pieca" fetchpriority="high" />
+          </div>
+          <div class="hero__stamp" aria-hidden="true">
+            <svg viewBox="0 0 140 140" role="img">
+              <defs><path id="circlePath" d="M70,70 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0" /></defs>
+              <text><textPath href="#circlePath">MĄKA · WODA · SÓL · OGIEŃ · </textPath></text>
+            </svg>
+            <b>72<small>H</small></b>
+          </div>
+          <p class="hero__caption">Margherita DOP · 36 zł</p>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>Impasto fatto a mano</span><i>✦</i><span>Forno a legna</span><i>✦</i><span>Ingredienti italiani</span><i>✦</i><span>Impasto fatto a mano</span><i>✦</i><span>Forno a legna</span><i>✦</i><span>Ingredienti italiani</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="menu-section section" id="menu" aria-labelledby="menu-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">Dalla nostra cucina · 01</p>
+            <h2 id="menu-title">Menu, które żyje<br /><em>z porami roku.</em></h2>
+          </div>
+          <p>Krótka karta. Dobre składniki. Każda pizza ma swój rytm, balans i powód, żeby wrócić po następny kawałek.</p>
+        </div>
+
+        <div class="menu-tabs reveal" role="tablist" aria-label="Kategorie menu">
+          <button type="button" role="tab" aria-selected="true" data-category="rosse">Pizze rosse</button>
+          <button type="button" role="tab" aria-selected="false" data-category="bianche">Pizze bianche</button>
+          <button type="button" role="tab" aria-selected="false" data-category="piccoli">Piccoli & dolci</button>
+        </div>
+
+        <div class="menu-layout">
+          <div class="menu-list reveal" id="menu-list" aria-live="polite"></div>
+          <aside class="menu-feature reveal reveal--right">
+            <img src="./assets/stol-pizze.webp" alt="Trzy autorskie pizze neapolitańskie podane na kamiennym stole" loading="lazy" />
+            <div class="menu-feature__note">
+              <span>Scelta del pizzaiolo</span>
+              <strong>Zapytaj o pizzę tygodnia</strong>
+            </div>
+          </aside>
+        </div>
+
+        <div class="menu-footer reveal">
+          <p>Wszystkie pizze możemy przygotować na cieście bezglutenowym <span>+8 zł</span>. W kuchni obecny jest gluten.</p>
+          <button class="button button--outline" type="button" data-open-cart>Rozpocznij zamówienie <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section class="story section" id="o-nas" aria-labelledby="story-title">
+        <div class="story__image reveal">
+          <img src="./assets/rzemioslo.webp" alt="Pizzaiolo ręcznie rozciąga długo fermentowane ciasto na kamiennym blacie" loading="lazy" />
+          <span class="story__image-label">Ogni giorno,<br />fatto a mano.</span>
+        </div>
+        <div class="story__copy reveal reveal--right">
+          <p class="kicker">Nasza filozofia · 02</p>
+          <h2 id="story-title">Najprostsze rzeczy wymagają <em>najwięcej uwagi.</em></h2>
+          <p class="story__intro">Farina & Brace powstała z fascynacji południem Włoch i przekonania, że dobra pizza nie potrzebuje skrótów.</p>
+          <p>Pracujemy na włoskiej mące typu 00, pomidorach San Marzano i nabiale od małych producentów. Ciasto każdego ranka składają te same ręce, a temperaturę pieca oceniamy po kolorze kopuły, nie po wyświetlaczu.</p>
+          <a class="text-link text-link--light" href="#proces">Zobacz, jak pracujemy <span aria-hidden="true">↓</span></a>
+          <dl class="story__numbers">
+            <div><dt>72 h</dt><dd>fermentacji</dd></div>
+            <div><dt>460°</dt><dd>w piecu</dd></div>
+            <div><dt>90 s</dt><dd>pieczenia</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="process section" id="proces" aria-labelledby="process-title">
+        <div class="process__title reveal">
+          <p class="kicker">Rzemiosło · 03</p>
+          <h2 id="process-title">Od mąki<br />do <em>ognia.</em></h2>
+        </div>
+        <ol class="process__steps">
+          <li class="reveal">
+            <span>01</span>
+            <div><h3>Lievito madre</h3><p>Zaczyn dokarmiamy codziennie. To on nadaje ciastu lekkość, charakter i delikatny aromat.</p></div>
+          </li>
+          <li class="reveal">
+            <span>02</span>
+            <div><h3>Długi odpoczynek</h3><p>Kulki dojrzewają przez trzy doby w niskiej temperaturze. Niczego nie przyspieszamy.</p></div>
+          </li>
+          <li class="reveal">
+            <span>03</span>
+            <div><h3>Żywy ogień</h3><p>Bukowe drewno, rozgrzany szamot i półtorej minuty. Każdą pizzę obracamy ręcznie.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="table-banner" aria-label="Wspólne jedzenie">
+        <img src="./assets/stol-pizze.webp" alt="Stół pełen pizzy podanej do wspólnego dzielenia" loading="lazy" />
+        <div class="table-banner__overlay reveal">
+          <p>A tavola!</p>
+          <h2>Najlepsze wieczory<br />zaczynają się <em>przy stole.</em></h2>
+          <a class="button button--cream" href="#rezerwacja">Zarezerwuj stolik <span aria-hidden="true">↘</span></a>
+        </div>
+      </section>
+
+      <section class="reviews section" aria-labelledby="reviews-title">
+        <div class="reviews__heading reveal">
+          <p class="kicker">Parole buone · 04</p>
+          <h2 id="reviews-title">Mówią, że wraca się<br /><em>dla brzegu.</em></h2>
+        </div>
+        <div class="reviews__grid">
+          <article class="review review--featured reveal">
+            <div class="review__stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+            <blockquote>„W końcu pizza, po której nie chce się iść spać. Ciasto jest lekkie, sprężyste i pachnie ogniem. Marinara absolutnie bezbłędna.”</blockquote>
+            <footer><strong>Jan K.</strong><span>Local Guide · Google</span></footer>
+          </article>
+          <article class="review reveal">
+            <div class="review__stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+            <blockquote>„Mortadella e pistacchio to mój nowy warszawski comfort food. Do tego świetna obsługa i wnętrze, w którym można siedzieć godzinami.”</blockquote>
+            <footer><strong>Ola M.</strong><span>Google</span></footer>
+          </article>
+          <article class="review reveal">
+            <div class="review__stars" aria-label="5 na 5 gwiazdek">★★★★★</div>
+            <blockquote>„Mała karta, ale wszystko trafione. Nduja ma idealny ogień, a tiramisù znika nieprzyzwoicie szybko.”</blockquote>
+            <footer><strong>Mateusz R.</strong><span>Google</span></footer>
+          </article>
+        </div>
+        <p class="rating reveal"><strong>4.9</strong><span>na podstawie 687 opinii</span></p>
+      </section>
+
+      <section class="booking section" id="rezerwacja" aria-labelledby="booking-title">
+        <div class="booking__intro reveal">
+          <p class="kicker">Prenota un tavolo · 05</p>
+          <h2 id="booking-title">Zostawimy dla Ciebie <em>miejsce przy ogniu.</em></h2>
+          <p>Rezerwacje przyjmujemy dla grup do 8 osób. Na większą kolację napisz do nas — przygotujemy wspólne menu.</p>
+          <div class="booking__contact">
+            <a href="tel:+48224091717">+48 22 409 17 17</a>
+            <a href="mailto:ciao@farinaebrace.pl">ciao@farinaebrace.pl</a>
+          </div>
+        </div>
+        <form class="booking-form reveal reveal--right" id="booking-form">
+          <div class="field"><label for="name">Imię</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Jak mamy się zwracać?" required /></div>
+          <div class="field"><label for="phone">Telefon</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+48 000 000 000" required /></div>
+          <div class="booking-form__row">
+            <div class="field"><label for="date">Data</label><input id="date" name="date" type="date" required /></div>
+            <div class="field"><label for="time">Godzina</label><select id="time" name="time" required><option value="">Wybierz</option><option>17:00</option><option>18:30</option><option>20:00</option><option>21:30</option></select></div>
+            <div class="field"><label for="guests">Osoby</label><select id="guests" name="guests" required><option value="">Ile?</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+          </div>
+          <button class="button button--primary button--full" type="submit">Sprawdź dostępność <span aria-hidden="true">↗</span></button>
+          <p class="form-note">Klikając przycisk, akceptujesz kontakt w sprawie rezerwacji.</p>
+          <p class="form-success" role="status" hidden>Dziękujemy! Stolik wstępnie zarezerwowany — potwierdzenie wyślemy SMS-em.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" id="kontakt">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="#top"><span class="brand__seal">F<span>&</span>B</span><span class="brand__text">Farina <i>&</i> Brace<small>pizza napoletana</small></span></a>
+          <p>Tu pachnie ciastem,<br />dymem i dobrym wieczorem.</p>
+        </div>
+        <div class="footer__col"><h3>Odwiedź nas</h3><address>ul. Stalowa 17<br />03—425 Warszawa</address><a href="#" aria-label="Otwórz mapę dojazdu">Pokaż na mapie ↗</a></div>
+        <div class="footer__col"><h3>Godziny</h3><p>Pon—Czw 12:00—22:00<br />Pt—Sob 12:00—23:00<br />Niedziela 12:00—21:00</p></div>
+        <div class="footer__col"><h3>Sociale</h3><a href="#">Instagram ↗</a><a href="#">Facebook ↗</a><a href="#">TikTok ↗</a></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 Farina & Brace</span><span>Made with flour & fire</span><a href="#">Polityka prywatności</a></div>
+    </footer>
+
+    <button class="mobile-order" type="button" data-open-cart>Zamów online <span data-mobile-total>0 zł</span></button>
+
+    <div class="drawer-backdrop" data-close-cart></div>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="cart-drawer__header"><div><p>Twoje zamówienie</p><h2 id="cart-title">Odbiór osobisty</h2></div><button type="button" data-close-cart aria-label="Zamknij koszyk">×</button></div>
+      <div class="cart-drawer__time"><span>Najbliższy odbiór</span><strong>dzisiaj · 25–35 min</strong></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span aria-hidden="true">◯</span><h3>Jeszcze tu pusto</h3><p>Dodaj pizzę z menu. Piec już jest rozgrzany.</p><button type="button" data-close-cart onclick="document.querySelector('#menu').scrollIntoView({behavior:'smooth'})">Zobacz menu</button></div>
+      <div class="cart-drawer__footer" id="cart-footer" hidden><div><span>Razem</span><strong id="cart-total">0 zł</strong></div><button class="button button--primary button--full" type="button" id="checkout">Przejdź dalej <span>↗</span></button><small>Płatność przy odbiorze lub online</small></div>
+    </aside>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script defer src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pełne menu Farina & Brace — pizza neapolitańska, przystawki, sałatki, dolci i napoje. Warszawa, Praga-Północ." />
+    <meta name="theme-color" content="#f3eadb" />
+    <title>Menu — Farina & Brace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloock&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" crossorigin href="./assets/menu-CNc9LkhA.css">
+    <link rel="stylesheet" crossorigin href="./assets/styles-CKmqewRP.css">
+  </head>
+  <body class="menu-page">
+    <a class="skip-link" href="#main">Przejdź do menu</a>
+
+    <div class="announcement" id="top" aria-label="Informacja">
+      <span>Ogień rozpalamy codziennie o 12:00</span>
+      <span class="announcement__dot" aria-hidden="true"></span>
+      <span>Dostawa na Pradze do 4 km</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Farina & Brace — strona główna">
+        <span class="brand__seal" aria-hidden="true">F<span>&</span>B</span>
+        <span class="brand__text">Farina <i>&</i> Brace<small>pizza napoletana</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span class="sr-only">Otwórz menu główne</span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Główna nawigacja">
+        <a class="nav__active" href="./menu.html" aria-current="page">Menu</a>
+        <a href="./index.html#o-nas">O nas</a>
+        <a href="./index.html#rezerwacja">Rezerwacje</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <button class="header-order" type="button" data-open-cart>
+        Zamów online
+        <span class="cart-count" data-cart-count aria-label="Liczba produktów">0</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="menu-page-hero" aria-labelledby="page-title">
+        <div class="menu-page-hero__title reveal">
+          <p class="kicker">La carta · Farina & Brace</p>
+          <h1 id="page-title">Prosto z pieca.<br /><em>Bez skrótów.</em></h1>
+        </div>
+        <div class="menu-page-hero__intro reveal reveal--right">
+          <p>Nasza karta jest krótka tam, gdzie liczy się jakość, i wystarczająco długa, żeby każdy znalazł swój ulubiony smak.</p>
+          <div class="menu-page-hero__facts">
+            <span><b>72 h</b> fermentacji</span>
+            <span><b>460°</b> w piecu</span>
+            <span><b>90 s</b> pieczenia</span>
+          </div>
+        </div>
+        <p class="menu-page-hero__edition">Menu · Estate 2026</p>
+      </section>
+
+      <nav class="category-nav" aria-label="Kategorie karty">
+        <div class="category-nav__inner">
+          <span class="category-nav__label">Przejdź do</span>
+          <a href="#classiche" class="is-active">Klasyczne</a>
+          <a href="#speciali">Speciali</a>
+          <a href="#vegetariane">Wegetariańskie</a>
+          <a href="#antipasti">Przystawki</a>
+          <a href="#insalate">Sałatki</a>
+          <a href="#dolci">Desery</a>
+          <a href="#bevande">Napoje</a>
+        </div>
+      </nav>
+
+      <div class="menu-legend" aria-label="Legenda oznaczeń">
+        <span><i class="legend-dot legend-dot--olive"></i> wegetariańskie</span>
+        <span><i class="legend-dot legend-dot--wine"></i> pikantne</span>
+        <span><i class="legend-dot legend-dot--ink"></i> wybór gości</span>
+      </div>
+
+      <section class="full-menu-section" id="classiche" data-menu-section aria-labelledby="classiche-title">
+        <header class="full-menu-section__heading reveal">
+          <span class="category-number">01</span>
+          <div><p class="kicker">Pizze classiche</p><h2 id="classiche-title">Klasyka,<br /><em>która nie nudzi.</em></h2></div>
+          <p>Czerwone, proste i bezbłędne. Pomidory San Marzano DOP, oliwa z Kampanii i ciasto przygotowywane codziennie na miejscu.</p>
+        </header>
+        <div class="full-menu-grid">
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Marinara Antica</h3><strong>31 zł</strong></div>
+            <p>San Marzano DOP, czosnek confit, oregano sycylijskie, oliwa EVO</p>
+            <div class="full-menu-item__meta"><span class="tag tag--olive">vegan</span><button type="button" data-add-item data-name="Marinara Antica" data-price="31">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Margherita DOP</h3><strong>36 zł</strong></div>
+            <p>San Marzano DOP, fior di latte, parmigiano, bazylia, oliwa EVO</p>
+            <div class="full-menu-item__meta"><span class="tag tag--ink">bestseller</span><button type="button" data-add-item data-name="Margherita DOP" data-price="36">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Napoli 2.0</h3><strong>45 zł</strong></div>
+            <p>San Marzano DOP, anchois z Cetary, kapary, czosnek, oliwki taggiasche</p>
+            <div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Napoli 2.0" data-price="45">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Prosciutto e Funghi</h3><strong>43 zł</strong></div>
+            <p>San Marzano DOP, fior di latte, prosciutto cotto, pieczarki, tymianek</p>
+            <div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Prosciutto e Funghi" data-price="43">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Diavola del Sud</h3><strong>44 zł</strong></div>
+            <p>San Marzano DOP, fior di latte, spianata piccante, miód chilli, oregano</p>
+            <div class="full-menu-item__meta"><span class="tag tag--wine">ostra</span><button type="button" data-add-item data-name="Diavola del Sud" data-price="44">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Capricciosa</h3><strong>47 zł</strong></div>
+            <p>San Marzano DOP, fior di latte, prosciutto cotto, karczochy, pieczarki, oliwki</p>
+            <div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Capricciosa" data-price="47">Dodaj <i>+</i></button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="full-menu-section full-menu-section--wine" id="speciali" data-menu-section aria-labelledby="speciali-title">
+        <header class="full-menu-section__heading reveal">
+          <span class="category-number">02</span>
+          <div><p class="kicker">Pizze speciali</p><h2 id="speciali-title">Odważniej.<br /><em>Po naszemu.</em></h2></div>
+          <p>Autorskie kompozycje z produktami, które przywozimy od małych włoskich producentów i wybieramy na lokalnych targach.</p>
+        </header>
+        <div class="full-menu-grid">
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Mortadella e Pistacchio</h3><strong>49 zł</strong></div>
+            <p>Fior di latte, mortadella IGP, burrata, pistacje z Bronte, skórka cytryny</p>
+            <div class="full-menu-item__meta"><span class="tag tag--cream">bestseller</span><button type="button" data-add-item data-name="Mortadella e Pistacchio" data-price="49">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Fuoco Calabrese</h3><strong>48 zł</strong></div>
+            <p>San Marzano DOP, 'nduja, papryka corno, provola affumicata, czerwona cebula</p>
+            <div class="full-menu-item__meta"><span class="tag tag--cream">molto piccante</span><button type="button" data-add-item data-name="Fuoco Calabrese" data-price="48">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Parma Dopo Forno</h3><strong>51 zł</strong></div>
+            <p>San Marzano DOP, fior di latte, prosciutto di Parma, rukola, parmigiano 24M</p>
+            <div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Parma Dopo Forno" data-price="51">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Salsiccia & Friarielli</h3><strong>49 zł</strong></div>
+            <p>Provola affumicata, salsiccia, friarielli, peperoncino, pecorino romano</p>
+            <div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Salsiccia & Friarielli" data-price="49">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Tartufo Nero</h3><strong>54 zł</strong></div>
+            <p>Fior di latte, taleggio, pieczarki, czarna trufla, parmigiano, oliwa pietruszkowa</p>
+            <div class="full-menu-item__meta"><span class="tag tag--cream">premium</span><button type="button" data-add-item data-name="Tartufo Nero" data-price="54">Dodaj <i>+</i></button></div>
+          </article>
+          <article class="full-menu-item reveal">
+            <div class="full-menu-item__top"><h3>Gamberi Piccanti</h3><strong>55 zł</strong></div>
+            <p>Crema di pomodoro, krewetki, stracciatella, chilli, czosnek, natka pietruszki</p>
+            <div class="full-menu-item__meta"><span class="tag tag--cream">ostra</span><button type="button" data-add-item data-name="Gamberi Piccanti" data-price="55">Dodaj <i>+</i></button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="full-menu-section" id="vegetariane" data-menu-section aria-labelledby="vegetariane-title">
+        <header class="full-menu-section__heading reveal">
+          <span class="category-number">03</span>
+          <div><p class="kicker">Pizze vegetariane</p><h2 id="vegetariane-title">Warzywa grają<br /><em>pierwszy plan.</em></h2></div>
+          <p>Nie są dodatkiem ani kompromisem. Palimy je, marynujemy, pieczemy i układamy tak, żeby każda pizza miała własny charakter.</p>
+        </header>
+        <div class="full-menu-grid">
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Passeggiata nel Bosco</h3><strong>46 zł</strong></div><p>Crema di funghi, taleggio, boczniak królewski, szałwia, parmigiano</p><div class="full-menu-item__meta"><span class="tag tag--olive">wege</span><button type="button" data-add-item data-name="Passeggiata nel Bosco" data-price="46">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Limone</h3><strong>43 zł</strong></div><p>Ricotta, fior di latte, cukinia, cytryna, mięta, prażony migdał</p><div class="full-menu-item__meta"><span class="tag tag--olive">wege</span><button type="button" data-add-item data-name="Limone" data-price="43">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Zucca Affumicata</h3><strong>45 zł</strong></div><p>Krem z pieczonej dyni, provola, gorgonzola, orzech włoski, szałwia</p><div class="full-menu-item__meta"><span class="tag tag--olive">wege</span><button type="button" data-add-item data-name="Zucca Affumicata" data-price="45">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Melanzana</h3><strong>44 zł</strong></div><p>San Marzano DOP, bakłażan, ricotta salata, bazylia, oliwa czosnkowa</p><div class="full-menu-item__meta"><span class="tag tag--olive">wege</span><button type="button" data-add-item data-name="Melanzana" data-price="44">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Quattro Formaggi</h3><strong>47 zł</strong></div><p>Fior di latte, gorgonzola dolce, taleggio, parmigiano, gruszka</p><div class="full-menu-item__meta"><span class="tag tag--olive">wege</span><button type="button" data-add-item data-name="Quattro Formaggi" data-price="47">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Orto Arrosto</h3><strong>43 zł</strong></div><p>San Marzano DOP, papryka, cukinia, cebula, oliwki, kapary, oregano</p><div class="full-menu-item__meta"><span class="tag tag--olive">vegan</span><button type="button" data-add-item data-name="Orto Arrosto" data-price="43">Dodaj <i>+</i></button></div></article>
+        </div>
+      </section>
+
+      <aside class="menu-note reveal">
+        <p>Un piccolo dettaglio</p>
+        <h2>Każdą pizzę możemy przygotować na cieście bezglutenowym.</h2>
+        <div><strong>+8 zł</strong><span>W kuchni obecny jest gluten. Zapytaj obsługę o pełną kartę alergenów.</span></div>
+      </aside>
+
+      <section class="full-menu-section full-menu-section--compact" id="antipasti" data-menu-section aria-labelledby="antipasti-title">
+        <header class="full-menu-section__heading reveal">
+          <span class="category-number">04</span>
+          <div><p class="kicker">Antipasti</p><h2 id="antipasti-title">Na początek<br /><em>i do środka stołu.</em></h2></div>
+          <p>Małe talerze do dzielenia, podjadania i czekania na pierwszą pizzę.</p>
+        </header>
+        <div class="full-menu-grid">
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Focaccia al Forno</h3><strong>21 zł</strong></div><p>Oliwa EVO, rozmaryn, sól Maldon</p><div class="full-menu-item__meta"><span class="tag tag--olive">vegan</span><button type="button" data-add-item data-name="Focaccia al Forno" data-price="21">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Burrata Pugliese</h3><strong>35 zł</strong></div><p>Pomidory sezonowe, pesto bazyliowe, oliwa cytrynowa, focaccia</p><div class="full-menu-item__meta"><span class="tag tag--olive">wege</span><button type="button" data-add-item data-name="Burrata Pugliese" data-price="35">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Polpette al Sugo</h3><strong>34 zł</strong></div><p>Pulpety wołowe, sos San Marzano, parmigiano, focaccia</p><div class="full-menu-item__meta"><span class="tag tag--ink">wybór gości</span><button type="button" data-add-item data-name="Polpette al Sugo" data-price="34">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Olive Calde</h3><strong>18 zł</strong></div><p>Ciepłe oliwki, skórka pomarańczy, chilli, zioła</p><div class="full-menu-item__meta"><span class="tag tag--olive">vegan</span><button type="button" data-add-item data-name="Olive Calde" data-price="18">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Tagliere Italiano</h3><strong>59 zł</strong></div><p>Mortadella, prosciutto di Parma, salame, pecorino, karczochy, focaccia</p><div class="full-menu-item__meta"><span>dla 2 osób</span><button type="button" data-add-item data-name="Tagliere Italiano" data-price="59">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Melanzane Arrosto</h3><strong>27 zł</strong></div><p>Palony bakłażan, pomidor, mięta, migdał, ocet balsamiczny</p><div class="full-menu-item__meta"><span class="tag tag--olive">vegan</span><button type="button" data-add-item data-name="Melanzane Arrosto" data-price="27">Dodaj <i>+</i></button></div></article>
+        </div>
+      </section>
+
+      <section class="full-menu-section full-menu-section--olive full-menu-section--compact" id="insalate" data-menu-section aria-labelledby="insalate-title">
+        <header class="full-menu-section__heading reveal">
+          <span class="category-number">05</span>
+          <div><p class="kicker">Insalate</p><h2 id="insalate-title">Lekko,<br /><em>ale konkretnie.</em></h2></div>
+          <p>Sezonowe liście, dobry ser, kwaśny akcent i chrupiący detal.</p>
+        </header>
+        <div class="full-menu-grid">
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Panzanella</h3><strong>32 zł</strong></div><p>Pomidory, pieczona papryka, ogórek, cebula, focaccia, bazylia</p><div class="full-menu-item__meta"><span class="tag tag--cream">vegan</span><button type="button" data-add-item data-name="Panzanella" data-price="32">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Finocchio e Arancia</h3><strong>34 zł</strong></div><p>Fenkuł, pomarańcza, rukola, oliwki, ricotta salata, pistacje</p><div class="full-menu-item__meta"><span class="tag tag--cream">wege</span><button type="button" data-add-item data-name="Finocchio e Arancia" data-price="34">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Cesare Romano</h3><strong>38 zł</strong></div><p>Sałata rzymska, kurczak z pieca, parmigiano, focaccia, anchois dressing</p><div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Cesare Romano" data-price="38">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Barbabietola</h3><strong>35 zł</strong></div><p>Pieczony burak, kozi ser, radicchio, orzech laskowy, balsamico</p><div class="full-menu-item__meta"><span class="tag tag--cream">wege</span><button type="button" data-add-item data-name="Barbabietola" data-price="35">Dodaj <i>+</i></button></div></article>
+        </div>
+      </section>
+
+      <section class="full-menu-section full-menu-section--compact" id="dolci" data-menu-section aria-labelledby="dolci-title">
+        <header class="full-menu-section__heading reveal">
+          <span class="category-number">06</span>
+          <div><p class="kicker">Dolci</p><h2 id="dolci-title">Jeszcze tylko<br /><em>coś słodkiego.</em></h2></div>
+          <p>Klasyczne włoskie desery robione u nas, codziennie od nowa.</p>
+        </header>
+        <div class="full-menu-grid">
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Tiramisù della Casa</h3><strong>24 zł</strong></div><p>Mascarpone, espresso, marsala, kakao</p><div class="full-menu-item__meta"><span class="tag tag--ink">bestseller</span><button type="button" data-add-item data-name="Tiramisù della Casa" data-price="24">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Panna Cotta</h3><strong>23 zł</strong></div><p>Wanilia, palone masło, wiśnie amarena</p><div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Panna Cotta" data-price="23">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Affogato</h3><strong>19 zł</strong></div><p>Lody waniliowe, podwójne espresso, amaretti</p><div class="full-menu-item__meta"><span></span><button type="button" data-add-item data-name="Affogato" data-price="19">Dodaj <i>+</i></button></div></article>
+          <article class="full-menu-item reveal"><div class="full-menu-item__top"><h3>Torta Caprese</h3><strong>25 zł</strong></div><p>Ciasto czekoladowo-migdałowe, mascarpone, oliwa, sól</p><div class="full-menu-item__meta"><span>bez mąki</span><button type="button" data-add-item data-name="Torta Caprese" data-price="25">Dodaj <i>+</i></button></div></article>
+        </div>
+      </section>
+
+      <section class="full-menu-section full-menu-section--drinks" id="bevande" data-menu-section aria-labelledby="bevande-title">
+        <header class="full-menu-section__heading reveal">
+          <span class="category-number">07</span>
+          <div><p class="kicker">Bevande</p><h2 id="bevande-title">Do pizzy<br /><em>i do rozmowy.</em></h2></div>
+          <p>Włoskie aperitivo, naturalne wina, domowe napoje i kawa, po której można zamówić jeszcze jeden deser.</p>
+        </header>
+        <div class="drinks-columns">
+          <div class="drinks-group reveal">
+            <h3>Aperitivo</h3>
+            <div class="drink-row"><span><b>Aperol Spritz</b><small>Aperol, prosecco, soda</small></span><strong>31 zł</strong></div>
+            <div class="drink-row"><span><b>Negroni</b><small>Gin, bitter, vermouth rosso</small></span><strong>33 zł</strong></div>
+            <div class="drink-row"><span><b>Garibaldi</b><small>Bitter, świeża pomarańcza</small></span><strong>29 zł</strong></div>
+            <div class="drink-row"><span><b>Vermouth & Tonic</b><small>Vermouth bianco, tonic, cytryna</small></span><strong>28 zł</strong></div>
+          </div>
+          <div class="drinks-group reveal">
+            <h3>Vino & birra</h3>
+            <div class="drink-row"><span><b>Vino della Casa</b><small>Białe / czerwone, 150 ml</small></span><strong>22 zł</strong></div>
+            <div class="drink-row"><span><b>Prosecco DOC</b><small>Extra dry, 150 ml</small></span><strong>25 zł</strong></div>
+            <div class="drink-row"><span><b>Montepulciano d'Abruzzo</b><small>Butelka 750 ml</small></span><strong>119 zł</strong></div>
+            <div class="drink-row"><span><b>Birra Moretti</b><small>330 ml</small></span><strong>18 zł</strong></div>
+          </div>
+          <div class="drinks-group reveal">
+            <h3>Analcolico</h3>
+            <div class="drink-row"><span><b>Limonata della Casa</b><small>Cytryna, rozmaryn, miód</small></span><strong>17 zł</strong></div>
+            <div class="drink-row"><span><b>Aranciata Rossa</b><small>Czerwona pomarańcza, soda</small></span><strong>17 zł</strong></div>
+            <div class="drink-row"><span><b>San Pellegrino</b><small>Gazowana / niegazowana, 750 ml</small></span><strong>16 zł</strong></div>
+            <div class="drink-row"><span><b>Cola MoleCola</b><small>330 ml</small></span><strong>15 zł</strong></div>
+          </div>
+          <div class="drinks-group reveal">
+            <h3>Caffè</h3>
+            <div class="drink-row"><span><b>Espresso</b><small>Single origin</small></span><strong>10 zł</strong></div>
+            <div class="drink-row"><span><b>Doppio</b><small>Podwójne espresso</small></span><strong>14 zł</strong></div>
+            <div class="drink-row"><span><b>Cappuccino</b><small>Także z mlekiem owsianym +2 zł</small></span><strong>15 zł</strong></div>
+            <div class="drink-row"><span><b>Espresso Tonic</b><small>Espresso, tonic, pomarańcza</small></span><strong>18 zł</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-cta reveal" aria-labelledby="menu-cta-title">
+        <p>Hai già scelto?</p>
+        <h2 id="menu-cta-title">Piec jest gorący.<br /><em>Co dla Ciebie?</em></h2>
+        <div><button class="button button--cream" type="button" data-open-cart>Zobacz zamówienie <span>↗</span></button><a class="text-link text-link--light" href="./index.html#rezerwacja">Zarezerwuj stolik <span>↗</span></a></div>
+      </section>
+    </main>
+
+    <footer class="footer" id="kontakt">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="./index.html"><span class="brand__seal">F<span>&</span>B</span><span class="brand__text">Farina <i>&</i> Brace<small>pizza napoletana</small></span></a>
+          <p>Tu pachnie ciastem,<br />dymem i dobrym wieczorem.</p>
+        </div>
+        <div class="footer__col"><h3>Odwiedź nas</h3><address>ul. Stalowa 17<br />03—425 Warszawa</address><a href="#">Pokaż na mapie ↗</a></div>
+        <div class="footer__col"><h3>Godziny</h3><p>Pon—Czw 12:00—22:00<br />Pt—Sob 12:00—23:00<br />Niedziela 12:00—21:00</p></div>
+        <div class="footer__col"><h3>Kontakt</h3><a href="tel:+48224091717">+48 22 409 17 17</a><a href="mailto:ciao@farinaebrace.pl">ciao@farinaebrace.pl</a><a href="./index.html#rezerwacja">Rezerwacje ↗</a></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 Farina & Brace</span><span>Made with flour & fire</span><a href="#">Polityka prywatności</a></div>
+    </footer>
+
+    <button class="mobile-order" type="button" data-open-cart>Zamów online <span data-mobile-total>0 zł</span></button>
+    <div class="drawer-backdrop" data-close-cart></div>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="cart-drawer__header"><div><p>Twoje zamówienie</p><h2 id="cart-title">Odbiór osobisty</h2></div><button type="button" data-drawer-close aria-label="Zamknij koszyk">×</button></div>
+      <div class="cart-drawer__time"><span>Najbliższy odbiór</span><strong>dzisiaj · 25–35 min</strong></div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span aria-hidden="true">◯</span><h3>Jeszcze tu pusto</h3><p>Wybierz coś z karty. Piec już jest rozgrzany.</p><button type="button" data-drawer-close>Zobacz menu</button></div>
+      <div class="cart-drawer__footer" id="cart-footer" hidden><div><span>Razem</span><strong id="cart-total">0 zł</strong></div><button class="button button--primary button--full" type="button" id="checkout">Przejdź dalej <span>↗</span></button><small>Płatność przy odbiorze lub online</small></div>
+    </aside>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script defer src="./menu.js"></script>
+  </body>
+</html>

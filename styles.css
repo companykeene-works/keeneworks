@@ -204,6 +204,7 @@ img, svg { display: block; max-width: 100%; }
 .project-media-velori { background: #080a10; }
 .project-media-studio { background: #11110f; }
 .project-media-accounting { background: #f7f3ec; }
+.project-media-pizzeria { background: #f3eadb; }
 .project-browser-bar { position: absolute; inset: 0 0 auto; z-index: 3; height: 30px; display: flex; align-items: center; gap: 12px; padding: 0 12px; border-bottom: 1px solid rgba(12,47,74,.1); background: rgba(250,252,252,.97); color: #82919a; font-size: 8px; }
 .project-browser-dots { display: inline-flex; gap: 4px; }
 .project-browser-dots i { width: 5px; height: 5px; border-radius: 50%; background: #c9d3d6; }
