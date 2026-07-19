@@ -154,6 +154,32 @@ img, svg { display: block; max-width: 100%; }
 .service-card li { padding: 5px 9px; border: 1px solid var(--line); border-radius: 99px; color: #59707e; font-size: 10px; }
 .featured li { border-color: rgba(255,255,255,.18); color: rgba(255,255,255,.72); }
 
+.why { position: relative; overflow: hidden; background: var(--paper); }
+.why::before { content: ""; position: absolute; width: 520px; height: 520px; right: -230px; top: -250px; border: 1px solid rgba(143,185,181,.24); border-radius: 50%; box-shadow: 0 0 0 70px rgba(143,185,181,.045), 0 0 0 140px rgba(143,185,181,.025); }
+.why .container { position: relative; }
+.why-grid { display: grid; grid-template-columns: 1.18fr .82fr; gap: 18px; }
+.why-card { position: relative; min-height: 328px; overflow: hidden; display: flex; flex-direction: column; padding: 34px; border: 1px solid var(--line); border-radius: var(--radius-md); background: white; transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
+.why-card:hover { transform: translateY(-6px); border-color: rgba(143,185,181,.72); box-shadow: 0 20px 45px rgba(12,47,74,.09); }
+.why-card-direct { background: var(--blue); border-color: var(--blue); color: white; }
+.why-card-direct:hover { border-color: var(--blue); box-shadow: 0 22px 48px rgba(12,47,74,.2); }
+.why-card-complete { grid-column: 1 / -1; min-height: 230px; display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; column-gap: 30px; align-items: center; background: var(--mint-light); border-color: rgba(143,185,181,.4); }
+.why-number { position: absolute; right: 27px; top: 25px; color: #9cabb2; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+.why-card-direct .why-number { color: rgba(255,255,255,.42); }
+.why-icon { width: 57px; height: 57px; display: grid; place-items: center; margin-bottom: auto; border-radius: 14px; background: var(--mint-light); color: var(--blue); }
+.why-icon svg { width: 29px; height: 29px; }
+.why-card-direct .why-icon { background: rgba(255,255,255,.1); color: var(--mint); }
+.why-card-copy { max-width: 580px; }
+.why-card h3 { margin: 30px 0 12px; font: 700 25px/1.2 "Manrope", sans-serif; letter-spacing: -.7px; }
+.why-card p { margin: 0; color: var(--text); font-size: 14px; line-height: 1.72; }
+.why-card-direct p { color: rgba(255,255,255,.72); }
+.why-tag { align-self: flex-start; margin-top: 25px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 99px; color: var(--blue); font-size: 9px; font-weight: 700; letter-spacing: .7px; text-transform: uppercase; }
+.why-card-direct .why-tag { border-color: rgba(255,255,255,.16); color: rgba(255,255,255,.72); }
+.why-card-complete .why-number { right: 31px; }
+.why-card-complete .why-icon { grid-column: 1; margin: 0; }
+.why-card-complete .why-card-copy { grid-column: 2; }
+.why-card-complete h3 { margin-top: 0; }
+.why-card-complete .why-tag { grid-column: 3; align-self: center; margin: 0 34px 0 0; border-color: rgba(24,72,108,.18); white-space: nowrap; }
+
 .about { overflow: hidden; background: var(--navy); color: white; }
 .about-layout { display: grid; grid-template-columns: 1fr .9fr; gap: 100px; align-items: center; }
 .eyebrow-light { color: var(--mint); }
@@ -327,6 +353,12 @@ img, svg { display: block; max-width: 100%; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 0; }
   .service-card p { min-height: 0; }
+  .why-grid { grid-template-columns: 1fr; }
+  .why-card { min-height: 0; }
+  .why-card-direct, .why-card-speed { min-height: 325px; }
+  .why-card-complete { grid-column: auto; min-height: 0; display: flex; align-items: stretch; }
+  .why-card-complete .why-icon { margin-bottom: 25px; }
+  .why-card-complete .why-tag { align-self: flex-start; margin: 25px 0 0; }
   .about-layout { grid-template-columns: 1fr; }
   .about-copy { text-align: center; }
   .about-copy .eyebrow { justify-content: center; }
@@ -368,6 +400,10 @@ img, svg { display: block; max-width: 100%; }
   .section-heading { margin-bottom: 40px; }
   .service-card { padding: 28px 24px; }
   .service-icon { margin-bottom: 35px; }
+  .why-card, .why-card-complete { padding: 27px 24px; }
+  .why-card-direct, .why-card-speed { min-height: 310px; }
+  .why-card h3 { font-size: 22px; }
+  .why-card-complete .why-number { right: 24px; }
   .about-stats { grid-template-columns: 1fr; max-width: 240px; margin-inline: auto; text-align: left; }
   .about-stats span { max-width: none; }
   .person-card { width: 93%; }
