@@ -214,6 +214,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-grid p, .footer-grid address { margin: 0; color: var(--cream-dim); font-style: normal; }
 .footer-grid a { color: var(--cream-dim); border-bottom: 1px solid transparent; }
 .footer-grid a:hover { color: var(--lime); border-color: currentColor; }
+.concept-disclaimer { max-width: 980px; margin: 0; padding: 1.25rem var(--pad); border-top: 2px solid var(--line-light); color: rgba(241,237,223,.55); font-size: .62rem; line-height: 1.65; letter-spacing: .035em; }
 .footer-bottom { padding: 1.1rem var(--pad); display: flex; justify-content: space-between; gap: 1rem; border-top: 2px solid var(--line-light); color: rgba(241,237,223,.55); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; }
 
 .reveal { opacity: 0; transform: translateY(28px); transition: opacity 650ms cubic-bezier(.2,.75,.2,1), transform 650ms cubic-bezier(.2,.75,.2,1); }
